@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff3e0;
+    color: #000;
+}
+
+.top-menu {
+    width: calc(100% - 350px);
+    
+    background-color: #fff3e0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+   
+}
+
+.menu-icon {
+    width: 28px;
+}
+
+.top-icons {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon-item {
+    text-align: center;
+    margin-right: 150px;
+}
+
+.icon-item img {
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-item p {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+
+
+
+.catalogo-layout {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff3e0;
+
+}
+
+.side-bar {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+    position: fixed;
+    margin-top: 10px;
+    background-color: #fff3e0;
+}
+.side-item{
+    margin-bottom: 60px;
+}
+
+.side-item img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff3e0;
+
+}
+
+.side-item p {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.catalogo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 30px;
+    margin-right: 280px;
+   
+}
+
+
+.fila-producto {
+    display:  inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.img-producto {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.producto-card {
+    background: #e00064;
+    border-radius: 15px;
+    padding: 50px;
+    color: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    flex: 2;
+    text-align: center;
+}
+
+.producto-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.producto-card p {
+    margin: 5px 0 10px 0;
+    font-size: 15px;
+}
+
+.estrellas {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-agregar {
+    background: #17c400;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-agregar:hover {
+    background: #13a800;
+}
+
+.btn-express {
+    background: #fff;
+    border: none;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn-express:hover {
+    background: #ececec;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    color: black;
+}
+
+.cantidad button {
+    background: none;
+    border: none;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.right-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 270px;
+  height: 100vh;
+  background-image: url("../../img/fondoVertical.png");
+  background-size: cover;           
+  background-position: center;     
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10px;
+  box-shadow: -3px 0 6px rgba(0,0,0,0.08);
+  z-index: 10;                      
+}
+
+.right-panel h2 {
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  z-index: 2;                      
+}
+
+.logo-right {
+  width: 100px;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.texto-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: bold;
+  color: #000;
+  margin: 15px 0;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.contacto {
+  text-align: center;
+  z-index: 2;
+}
+
+.contacto img {
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+
+.side-bar,
+.top-icons {
+    position: sticky;
+    top: 0;
+    background-color: #fff3e0;
+    z-index: 5;
+}
+
+@media (max-width: 1100px) {
+    .catalogo-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-bar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .right-panel {
+        width: 100%;
+        min-height: 250px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+    }
+
+    .texto-vertical {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+}

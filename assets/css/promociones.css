@@ -1,0 +1,200 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fffaf0;
+  color: #000;
+}
+
+.top-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 345px);
+  background-color: #fff3e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+.side-item{
+    margin-bottom: 60px;
+}
+
+.menu-icon {
+  width: 28px;
+  
+}
+
+.top-icons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-item {
+    text-align: center;
+    margin-right: 150px;
+}
+
+.icon-item img {
+  width: 55px;
+  display: block;
+  margin: 0 auto;
+}
+
+.icon-item p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.side-bar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  width: 160px;
+  background-color: #fffaf7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 20px;
+  
+  
+}
+
+
+
+.side-item img {
+  width: 45px;
+  display: block;
+  margin: 0 auto;
+}
+
+.side-item p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.catalogo-container {
+  margin-top: 100px;
+  margin-left: 180px;
+  margin-right: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 40px;
+}
+
+.titulo-promos {
+  text-align: center;
+  color: #e00064;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.promo-card {
+  display: flex;
+  align-items: center;
+  background: #ffdee8;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.promo-img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.promo-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.promo-info h3 {
+  margin: 0;
+  color: #d1005a;
+  font-size: 20px;
+}
+
+.promo-info p {
+  margin: 5px 0;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.precio .antes {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 8px;
+}
+
+.btn-promo {
+  background-color: #d1005a;
+  border: none;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-promo:hover {
+  background-color: #a80048;
+}
+
+.right-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 270px;
+  height: 100vh;
+  background-image: url("../../img/fondoVertical.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 10px;
+  box-shadow: -3px 0 6px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.logo-right {
+  width: 120px;
+  margin: 10px 0;
+}
+
+.texto-vertical {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #000;
+  font-size: 13px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.contacto {
+  text-align: center;
+}
+
+.contacto img {
+  width: 25px;
+  margin-bottom: 5px;
+}
