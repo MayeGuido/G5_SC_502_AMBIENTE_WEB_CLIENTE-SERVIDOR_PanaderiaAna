@@ -1,0 +1,41 @@
+.estrellas {
+  display: flex;
+  gap: 5px;
+}
+
+.estrellas input {
+  display: none;
+}
+
+.estrellas label {
+  font-size: 24px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.estrellas label.hover {
+  color: #ffd700;
+}
+
+.estrellas label.selected {
+  color: #ffd700;
+}
+
+.btn-submit {
+  background: #e00064;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background: #c00050;
+}
+
+#comentario {
+  resize: none;
+}

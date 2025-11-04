@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administración - Panadería y Repostería ANA</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <header class="hero">
+    <a href="index.html" class="no-link">
+      <img src="img/logo.png" alt="Logo" class="logo" />
+    </a>
+
+    <img src="img/menu.png" alt="Menú" class="menu-icon" id="btnMenuToastIndex" />
+
+    <div class="hero-top-icons">
+      <a href="pasteleria.html" class="no-link">
+        <div class="icon-item">
+          <img src="img/pasteleria.png" alt="Pasteleria" />
+          <p>Pastelería</p>
+        </div>
+      </a>
+      <a href="reposteria.html" class="no-link">
+        <div class="icon-item">
+          <img src="img/reposteria.png" alt="Repostería" />
+          <p>Repostería</p>
+        </div>
+      </a>
+      <a href="panaderia.html" class="no-link">
+        <div class="icon-item">
+          <img src="img/panderia.png" alt="Panadería" />
+          <p>Panadería</p>
+        </div>
+      </a>
+      <a href="promociones.html" class="no-link">
+        <div class="icon-item">
+          <img src="img/promociones.png" alt="Promociones" />
+          <p>Promociones</p>
+        </div>
+      </a>
+    </div>
+
+    <h1 class="titulo">Equipo de Administración</h1>
+
+    <div class="hero-buttons">
+      <a href="recetas.html" class="no-link">
+        <div class="btn-item">
+          <img src="img/recetasconAmor.png" alt="Recetas" />
+          <p>Recetas con Amor</p>
+        </div>
+      </a>
+
+      <a href="sobreNosotros.html" class="no-link">
+        <div class="btn-item">
+          <img src="img/sobreNosotros.png" alt="Sobre Nosotros" />
+          <p>Sobre Nosotros</p>
+        </div>
+      </a>
+
+      <div class="btn-item carrito-btn" id="btnCarritoIndex">
+        <img src="img/carrito.png" alt="Carrito de Compras" />
+        <p>Carrito de Compras</p>
+      </div>
+
+      <div class="btn-item">
+        <img src="img/express.png" alt="Pedido Express" />
+        <p>Pedido Express</p>
+      </div>
+    </div>
+
+    <div class="buscador">
+      <input type="text" placeholder="Buscar..." />
+      <button><img src="img/icono-buscar.png" alt="Buscar" /></button>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="titulo-vendidos">Nuestro Equipo</h2>
+    <section class="productos">
+      <div class="producto">
+        <img src="img/placeholder.png" alt="Ana Rodriguez" /> 
+        <div class="info">
+          <h3>Ana Rodriguez</h3>
+          <p>Fundadora & Maestra Panadera</p>
+          <p>Con más de 10 años de experiencia, Ana es la alma de la panadería, creando recetas tradicionales con pasión y dedicación.</p>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="img/placeholder.png" alt="Carlos Jimenez" /> 
+        <div class="info">
+          <h3>Carlos Jimenez</h3>
+          <p>Chef Pastelero</p>
+          <p>Especialista en pasteles innovadores, Carlos combina creatividad y técnica para deleitar a nuestros clientes con dulces únicos.</p>
+        </div>
+      </div>
+      <div class="producto">
+        <img src="img/placeholder.png" alt="Lucia Torres" /> 
+        <div class="info">
+          <h3>Lucia Torres</h3>
+          <p>Atención al Cliente</p>
+          <p>Lucia asegura que cada cliente se sienta valorado, manejando consultas y pedidos con amabilidad y eficiencia.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <div class="footer-btn" id="btnContactenosIndex">
+        <img src="img/contactenos.png" alt="Contáctenos" />
+        <p>Contáctenos</p>
+      </div>
+      <div class="footer-btn" id="btnPreguntasIndex">
+        <img src="img/preguntas.png" alt="Preguntas" />
+        <p>Preguntas</p>
+      </div>
+      <div class="footer-btn" id="btnResenasIndex">
+        <img src="img/reseñas.png" alt="Reseñas" />
+        <p>Reseñas</p>
+      </div>
+    </div>
+    <p class="footer-text">
+      Más de 10 años de pasión, esfuerzo y dulzura en cada creación
+    </p>
+  </footer>
+
+  <div id="menuToastIndex" class="menu-toast">
+    <div class="toast-content">
+      <h2>Menú Principal</h2>
+      <ul>
+        <li>Clientes</li>
+        <li>Gestión de Pedidos</li>
+        <li>Inventario</li>
+        <li>Administración</li>
+        <li>Gestión de Pagos</li>
+        <li>Soporte</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="modalInfoIndex" class="modal">
+    <div class="modal-content">
+      <span class="cerrar">&times;</span>
+      <h3 id="modalTituloIndex"></h3>
+      <p id="modalTextoIndex"></p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
