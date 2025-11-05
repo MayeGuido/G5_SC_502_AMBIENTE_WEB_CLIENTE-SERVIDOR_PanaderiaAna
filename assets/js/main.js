@@ -126,9 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-  // Funcionalidad para reseñas.html
   if (document.getElementById("listaResenas")) {
-    // Reseñas existentes
     const reseñasExistentes = [
       { comentario: "¡Los pasteles son increíbles! El de chocolate es mi favorito.", calificacion: 5 },
       { comentario: "Buen servicio, pero el pan podría estar más fresco.", calificacion: 4 },
@@ -227,7 +225,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-//  Mostrar información de la receta 
 const recetas = {
   "Pastel de chocolate": {
     descripcion: "Bizcocho húmedo de cacao con cobertura de chocolate derretido y relleno de crema.",
@@ -295,5 +292,4 @@ document.querySelectorAll(".btn-express").forEach(btn => {
     mostrarToast(" Pedido Express solicitado");
   });
 });
-
 

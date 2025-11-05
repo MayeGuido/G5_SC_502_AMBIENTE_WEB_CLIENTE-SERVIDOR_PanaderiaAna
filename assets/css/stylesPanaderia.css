@@ -35,7 +35,7 @@ body {
 
 .icon-item {
   text-align: center;
-  margin-right: 150px;
+  margin-right: 130px;
 }
 
 .icon-item img {
@@ -45,12 +45,9 @@ body {
 }
 
 .icon-item p {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: 5px;
-  font-weight: 500;
 }
-
-
 
 
 .catalogo-layout {
