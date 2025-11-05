@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.shutterstock.com/image-photo/delicious-loaves-bread-german-baker-600nw-1544878508.jpg);
+}
+
+.registro{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.shutterstock.com/image-photo/delicious-loaves-bread-german-baker-600nw-1544878508.jpg);
+} 
+
+.login-container{
+width: 400px;
+display: flex;
+flex-direction:  column;
+background-color: #fbf6f6ad;
+border-radius: 20px;
+text-align: center;
+gap:9px;
+padding: 20px;
+}
+.registro-container{
+width: 400px;
+display: flex;
+flex-direction:  column;
+background-color: #fbf6f6ad;
+border-radius: 20px;
+text-align: center;
+gap:8px;
+padding: 20px;
+}
+.labels{
+ display: block;
+ text-align: center;
+ margin-bottom: 8px;
+}
+.inputs{
+    width: 90%;
+    padding: 6px;
+    border-radius: 10px;
+    
+}
+#form > div{
+width: 100%;
+margin-bottom: 20px;
+}
+
+.logo-container img{
+    width: 190px;
+}
+.h3-container{
+    text-align: center;
+    width: 20px;
+    gap:10px;
+    font-size: 14px;
+
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    background-color: #8f283d; 
+    color: white;              
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 60px;      
+  
+ 
+}
+
+.button:hover {
+    background-color: #d5566b; 
+}

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/stylesPanaderia.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/productos.css">
 </head>
 
 <body class="catalogo-body">
@@ -74,59 +74,36 @@
 
         </aside>
 
+        <div class="catalogo-layout">
 
-        <section class="catalogo-container">
-            <div class="fila-producto">
-                <img src="img/baguet.png" alt="Baguette" class="img-producto">
+            <div class="inventario-container">
+                <h1 class="titulo-inventario">Inventario</h1>
+
+                <form class="form-productos" action="#" method="post">
+                    <div class="busqueda-container">
+                        <label class="labels" for="codigo">Código del producto</label>
+                        <input class="inputs" type="text" id="codigo" name="codigo" placeholder="1cvz41">
+                        <button type="submit" class="button">Buscar Producto</button>
+                    </div>
+                </form>
+
                 <div class="producto-card">
-                    <h3>Baguette</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
+                    <img src="img/trensa_dulce.png" alt="Trenza dulce" class="produc-img">
+                    <div class="produc-info">
+                        <h3 class="codigo">Codigo: 89s74</h3>
+                        <h3>Trenza dulce</h3>
+                        <p>Trenza dulce elaborada con masa suave, rellena de crema pastelera y decorada con frutas
+                            frescas que le dan un toque colorido y delicioso.</p>
+                        <p class="precio">₡2000</p>
+                        <div class="botones">
+                            <button class="btn-Editar"><a href="registroInventario.html">Modificar</a></button>
+                            <button class="btn-Eliminar">Eliminar</button>
                         </div>
-                        <button class="btn-express">Envío Express</button>
                     </div>
                 </div>
             </div>
 
-            <div class="fila-producto">
-                <img src="img/pizzita.png" alt="Pizzita" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pizzita</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fila-producto">
-                <img src="img/pancarne.png" alt="Pan de carne" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pan de carne</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">600 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
         <aside class="right-panel">
             <div class="right-overlay">
@@ -147,7 +124,8 @@
         <div class="toast-content">
             <h2>Menú Principal</h2>
             <div class="menu-sections">
- <div class="menu-block">
+
+                <div class="menu-block">
                     <h3>Clientes</h3>
                     <ul>
                         <li><a href="login.html">Registro y Login</a></li>
@@ -201,11 +179,9 @@
                         <li>Ubicación</li>
                     </ul>
                 </div>
+
             </div>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
 
     <script src="assets/js/main.js"></script>
