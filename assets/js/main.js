@@ -286,12 +286,14 @@ function mostrarToast(mensaje) {
 }
 document.querySelectorAll(".btn-agregar").forEach(btn => {
   btn.addEventListener("click", () => {
-    mostrarToast("✅ Producto añadido al carrito");
+    mostrarToast(" Producto añadido al carrito");
   });
 });
 
 document.querySelectorAll(".btn-express").forEach(btn => {
   btn.addEventListener("click", () => {
-    mostrarToast("🚚 Pedido Express solicitado");
+    mostrarToast(" Pedido Express solicitado");
   });
 });
+
+

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/stylesPanaderia.css">
+    <link rel="stylesheet" href="assets/css/tarjetaModifi.css">
 </head>
 
 <body class="catalogo-body">
@@ -17,6 +16,7 @@
                 <div class="icon-item">
                     <img src="img/pasteleria.png" alt="Pasteleria">
                     <p>Pasteleria</p>
+
                 </div>
             </a>
             <a href="reposteria.html">
@@ -74,59 +74,30 @@
 
         </aside>
 
+        <div class="catalogo-layout">
 
-        <section class="catalogo-container">
-            <div class="fila-producto">
-                <img src="img/baguet.png" alt="Baguette" class="img-producto">
-                <div class="producto-card">
-                    <h3>Baguette</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
+            <div class="pago-container">
+                <h1 class="titulo-pago">Metodo de Pago </h1>
+
+                <div class="tarjeta-card">
+                    <img src="img/tarjeta.png" alt="Tarjeta bancaria" class="tarjeta-img">
+
+                    <div class="tarjeta-info">
+                        <h3>Titular: Ana Rodríguez</h3>
+                        <h3>Número: **** **** **** 8245</h3>
+                        <p>Fecha de expiración: 08/28</p>
+                        <p>CVV: 875</p>
+
+                        <div class="botones">
+                            <button class="btn-confirmar">Eliminar</button>
+                            <button class="btn-Modificar"><a href="tarjeta.html">Modificar</a></button>
                         </div>
-                        <button class="btn-express">Envío Express</button>
                     </div>
                 </div>
             </div>
 
-            <div class="fila-producto">
-                <img src="img/pizzita.png" alt="Pizzita" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pizzita</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
+        </div>
 
-            <div class="fila-producto">
-                <img src="img/pancarne.png" alt="Pan de carne" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pan de carne</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">600 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <aside class="right-panel">
             <div class="right-overlay">
@@ -147,7 +118,8 @@
         <div class="toast-content">
             <h2>Menú Principal</h2>
             <div class="menu-sections">
- <div class="menu-block">
+
+               <div class="menu-block">
                     <h3>Clientes</h3>
                     <ul>
                         <li><a href="login.html">Registro y Login</a></li>
@@ -201,15 +173,12 @@
                         <li>Ubicación</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
 
     <script src="assets/js/main.js"></script>
-
 
 </body>
 

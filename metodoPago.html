@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/stylesPanaderia.css">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/metodoPago.css">
 </head>
 
 <body class="catalogo-body">
@@ -74,59 +74,28 @@
 
         </aside>
 
+        <div class="metodo-pago-container">
+            <h2 class="titulo-pago">Método de Pago</h2>
+            <div class="tarjetas-pago">
 
-        <section class="catalogo-container">
-            <div class="fila-producto">
-                <img src="img/baguet.png" alt="Baguette" class="img-producto">
-                <div class="producto-card">
-                    <h3>Baguette</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
+                <div class="btn-metodo">
+                    <img src="img/tarjeta.png" alt="Pago con tarjeta" class="img-metodo">
+                    <button class="btn-pago"><a href="tarjeta.html">Tarjeta</a></button>
                 </div>
-            </div>
 
-            <div class="fila-producto">
-                <img src="img/pizzita.png" alt="Pizzita" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pizzita</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
+                <div class="btn-metodo">
+                    <img src="img/sinpe-movil.png" alt="Pago por SINPE" class="img-metodo">
+                    <button class="btn-pago sinpe">SINPE</button>
                 </div>
-            </div>
 
-            <div class="fila-producto">
-                <img src="img/pancarne.png" alt="Pan de carne" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pan de carne</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">600 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
+                <div class="btn-metodo">
+                    <img src="img/efectivo.png" alt="Pago en efectivo" class="img-metodo">
+                    <button class="btn-pago efectivo">Efectivo</button>
                 </div>
+
             </div>
-        </section>
+        </div>
+
 
         <aside class="right-panel">
             <div class="right-overlay">
@@ -147,7 +116,8 @@
         <div class="toast-content">
             <h2>Menú Principal</h2>
             <div class="menu-sections">
- <div class="menu-block">
+
+                 <div class="menu-block">
                     <h3>Clientes</h3>
                     <ul>
                         <li><a href="login.html">Registro y Login</a></li>
@@ -201,15 +171,12 @@
                         <li>Ubicación</li>
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    </div>
 
     <script src="assets/js/main.js"></script>
-
 
 </body>
 

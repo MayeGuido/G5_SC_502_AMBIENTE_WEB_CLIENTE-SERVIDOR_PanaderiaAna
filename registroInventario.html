@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/stylesPanaderia.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/registroInventario.css">
 </head>
 
 <body class="catalogo-body">
@@ -74,59 +74,49 @@
 
         </aside>
 
+        <form class="form-registroInventario" action="#" method="post">
 
-        <section class="catalogo-container">
-            <div class="fila-producto">
-                <img src="img/baguet.png" alt="Baguette" class="img-producto">
-                <div class="producto-card">
-                    <h3>Baguette</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
+            <h2>Registro de Inventario</h2>
+
+            <div>
+                <label class="labels" for="codigo">Código del producto</label>
+                <input class="inputs" type="text" id="codigo" name="codigo">
             </div>
 
-            <div class="fila-producto">
-                <img src="img/pizzita.png" alt="Pizzita" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pizzita</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
+            <div>
+                <label class="labels" for="nombre">Nombre del producto</label>
+                <input class="inputs" type="text" id="nombre" name="nombre">
             </div>
 
-            <div class="fila-producto">
-                <img src="img/pancarne.png" alt="Pan de carne" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pan de carne</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">600 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
+            <div>
+                <label class="labels" for="categoria">Categoría</label>
+                <input class="inputs" type="text" id="categoria" name="categoria">
             </div>
-        </section>
+
+            <div>
+                <label class="labels" for="cantidad">Cantidad</label>
+                <input class="inputs" type="number" id="cantidad" name="cantidad">
+            </div>
+
+            <div>
+                <label class="labels" for="precio">Precio (₡)</label>
+                <input class="inputs" type="number" id="precio" name="precio">
+            </div>
+
+            <div>
+                <label class="labels" for="proveedor">Proveedor</label>
+                <input class="inputs" type="text" id="proveedor" name="proveedor">
+            </div>
+
+            <div>
+                <label class="labels" for="fechaIngreso">Fecha de ingreso</label>
+                <input class="inputs" type="date" id="fechaIngreso" name="fechaIngreso">
+            </div>
+
+            <button type="submit" class="button">Registrar producto</button>
+            <button type="submit" class="button">Modificar Producto</button>
+        </form>
+
 
         <aside class="right-panel">
             <div class="right-overlay">
@@ -147,7 +137,8 @@
         <div class="toast-content">
             <h2>Menú Principal</h2>
             <div class="menu-sections">
- <div class="menu-block">
+
+                 <div class="menu-block">
                     <h3>Clientes</h3>
                     <ul>
                         <li><a href="login.html">Registro y Login</a></li>
@@ -201,11 +192,9 @@
                         <li>Ubicación</li>
                     </ul>
                 </div>
+
             </div>
         </div>
-    </div>
-    </div>
-    </div>
     </div>
 
     <script src="assets/js/main.js"></script>
