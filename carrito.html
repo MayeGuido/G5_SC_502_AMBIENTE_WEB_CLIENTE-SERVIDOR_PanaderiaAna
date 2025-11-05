@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras | Panadería ANA</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body class="catalogo-body">
+
+  <header class="top-menu">
+    <img src="img/menu.png" alt="Menú" class="menu-icon">
+    <div class="top-icons">
+      <a href="pasteleria.html">
+        <div class="icon-item">
+          <img src="img/pasteleria.png" alt="Pasteleria">
+          <p>Pasteleria</p>
+        </div>
+      </a>
+      <a href="reposteria.html">
+        <div class="icon-item">
+          <img src="img/reposteria.png" alt="Repostería">
+          <p>Repostería</p>
+        </div>
+      </a>
+      <a href="panaderia.html">
+        <div class="icon-item">
+          <img src="img/panderia.png" alt="Panadería">
+          <p>Panadería</p>
+        </div>
+      </a>
+      <a href="promociones.html">
+        <div class="icon-item">
+          <img src="img/promociones.png" alt="Promociones">
+          <p>Promociones</p>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="catalogo-layout">
+
+    <aside class="side-bar">
+      <a href="recetas.html">
+        <div class="side-item">
+          <img src="img/recetasconAmor.png" alt="Recetas">
+          <p>Recetas<br>con Amor</p>
+        </div>
+      </a>
+      <a href="sobreNosotros.html">
+        <div class="side-item">
+          <img src="img/sobreNosotros.png" alt="sobreNosotros">
+          <p>Sobre Nosotros</p>
+        </div>
+      </a>
+      <a href="carrito.html">
+        <div class="side-item">
+          <img src="img/carrito.png" alt="Carrito">
+          <p>Carrito de<br>Compras</p>
+        </div>
+      </a>
+      <a href="recetas.html">
+        <div class="side-item">
+          <img src="img/express.png" alt="Express">
+          <p>Pedido<br>Express</p>
+        </div>
+      </a>
+    </aside>
+
+    <section class="catalogo-container">
+      <h1 class="titulo">🛒 Carrito de Compras</h1>
+
+      <table class="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Total</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dona de Chocolate</td>
+            <td><input type="number" value="2" min="1"></td>
+            <td>₡500</td>
+            <td>₡1000</td>
+            <td><button class="btn-agregar">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>Baguette</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>₡500</td>
+            <td>₡500</td>
+            <td><button class="btn-agregar">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="resumen-carrito">
+        <h3>Total a pagar: <span>₡1500</span></h3>
+        <button class="btn-express">Finalizar Compra</button>
+      </div>
+    </section>
+
+    <aside class="right-panel">
+      <div class="right-overlay">
+        <h2>Panadería ANA</h2>
+        <a href="index.html">
+          <img src="img/logo.png" class="logo-right" alt="Logo ANA">
+        </a>
+        <p class="texto-vertical">Más de 10 años de pasión, esfuerzo y dulzura en cada creación</p>
+        <div class="contacto">
+          <img src="img/contactenos.png" alt="Contacto">
+          <p>Contáctenos</p>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <div id="menu-toast" class="menu-toast">
+    <div class="toast-content">
+      <h2>Menú Principal</h2>
+      <div class="menu-sections">
+        <div class="menu-block">
+          <h3>Clientes</h3>
+          <ul>
+            <li>Registro y Login</li>
+            <li>Perfil</li>
+            <li>Favoritos</li>
+            <li>Carrito</li>
+          </ul>
+        </div>
+
+        <div class="menu-block">
+          <h3>Gestión de Pedidos</h3>
+          <ul>
+            <li>Crear nuevo pedido</li>
+            <li>Seguimiento de pedido</li>
+            <li>Historial de compras</li>
+          </ul>
+        </div>
+
+        <div class="menu-block">
+          <h3>Administración</h3>
+          <ul>
+            <li>Gestión de usuarios</li>
+            <li>Gestión de productos</li>
+            <li>Reportes de ventas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© Panadería y Repostería ANA - Hecho con amor en Costa Rica 🇨🇷</p>
+  </footer>
+</body>
+</html>
