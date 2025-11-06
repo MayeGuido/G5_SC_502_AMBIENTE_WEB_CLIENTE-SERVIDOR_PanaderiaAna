@@ -179,20 +179,6 @@
     </p>
   </footer>
 
-  <div id="menuToastIndex" class="menu-toast">
-    <div class="toast-content">
-      <h2>Menú Principal</h2>
-      <ul>
-        <li>Clientes</li>
-        <li>Gestión de Pedidos</li>
-        <li>Inventario</li>
-        <li>Administración</li>
-        <li>Gestión de Pagos</li>
-        <li>Soporte</li>
-      </ul>
-    </div>
-  </div>
-
   <div id="modalInfoIndex" class="modal">
     <div class="modal-content">
       <span class="cerrar">&times;</span>

@@ -150,67 +150,7 @@
 
     </div>
 
-    <div id="menu-toast" class="menu-toast">
-        <div class="toast-content">
-            <h2>Menú Principal</h2>
-            <div class="menu-sections">
-                <div class="menu-block">
-                    <h3>Clientes</h3>
-                    <ul>
-                        <li><a href="login.html">Registro y Login</a></li>
-                        <li><a href="Perfil.html">Perfil</a></li>
-                        <li><a href="favoritos.html">Favoritos</a></li>
-                        <li>Carrito</li>
-                    </ul>
-                </div>
-
-                <div class="menu-block">
-                    <h3>Gestión de Pedidos</h3>
-                    <ul>
-                        <li>Crear nuevo pedido</li>
-                        <li>Seguimiento de pedido</li>
-                        <li>Historial de compras</li>
-                    </ul>
-                </div>
-
-                <div class="menu-block">
-                    <h3>Administración</h3>
-                    <ul>
-                        <li>Gestión de usuarios</li>
-                        <li>Gestión de productos</li>
-                        <li>Reportes de ventas</li>
-                        <li>Configuración del sistema</li>
-                    </ul>
-                </div>
-
-                <div class="menu-block">
-                    <h3>Inventario</h3>
-                    <ul>
-                        <li><a href="registroInventario.html">Registrar nuevo producto</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                    </ul>
-                </div>
-
-                <div class="menu-block">
-                    <h3>Métodos de Pago</h3>
-                    <ul>
-                        <li><a href="metodoPago.html">Metodo Pago</a></li>
-                        <li><a href="tarjetaModificar.htm">Modifivar Metodo</a></li>
-                        <li><a href="historial.html">Historial de Pago</a></li>
-                    </ul>
-                </div>
-
-                <div class="menu-block">
-                    <h3>Contacto y Soporte</h3>
-                    <ul>
-                        <li>Formulario de contacto</li>
-                        <li>Chat o WhatsApp</li>
-                        <li>Ubicación</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+  
 
     <script src="assets/js/main.js"></script>
 </body>

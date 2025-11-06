@@ -1,28 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnMenu = document.getElementById("btnMenuToastIndex") || document.querySelector(".menu-icon");
-  const menuToast = document.getElementById("menuToastIndex") || document.getElementById("menu-toast");
-
-  if (btnMenu && menuToast) {
-    btnMenu.addEventListener("click", () => {
-      menuToast.classList.toggle("active");
-    });
-
-    menuToast.addEventListener("click", (e) => {
-      if (e.target === menuToast) menuToast.classList.remove("active");
-    });
-
-    const menuItems = menuToast.querySelectorAll("li");
-    menuItems.forEach(item => {
-      item.addEventListener("click", () => {
-        const text = item.textContent.trim();
-        if (text === "Administración") {
-          window.location.href = "administracion.html";
-        }
-        menuToast.classList.remove("active"); 
-      });
-    });
-  }
-
+ 
   const carritoBtn = document.getElementById("btnCarritoIndex");
   const addCartIcons = document.querySelectorAll(".add-cart-index");
   let carritoCount = 0;
