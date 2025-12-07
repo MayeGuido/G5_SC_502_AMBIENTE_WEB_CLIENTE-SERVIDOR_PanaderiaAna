@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería | Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/pasteleria.css">
+    <link rel="stylesheet" href="publics/css/pasteleria.css">
 </head>
 
 <body>
@@ -13,33 +13,33 @@
     <header class="top-menu">
         <a href="Perfil.html">
             <div class="icon-item">
-                <img src="img/perfil.png" alt="Perfil" width="80">
+                <img src="publics/img/perfil.png" alt="Perfil" width="80">
                 <p>Mi Perfil</p>
             </div>
         </a> <a href="pasteleria.html">
             <div class="icon-item">
-                <img src="img/pasteleria.png" alt="Pasteleria">
+                <img src="publics/img/pasteleria.png" alt="Pasteleria">
                 <p>Pasteleria</p>
             </div>
         </a>
         <a href="reposteria.html">
 
             <div class="icon-item">
-                <img src="img/reposteria.png" alt="Repostería">
+                <img src="publics/img/reposteria.png" alt="Repostería">
                 <p>Repostería</p>
             </div>
         </a>
         <a href="panaderia.html">
 
             <div class="icon-item">
-                <img src="img/panderia.png" alt="Panadería">
+                <img src="publics/img/panderia.png" alt="Panadería">
                 <p>Panadería</p>
             </div>
         </a>
         <a href="promociones.html">
 
             <div class="icon-item">
-                <img src="img/promociones.png" alt="Promociones">
+                <img src="publics/img/promociones.png" alt="Promociones">
                 <p>Promociones</p>
             </div>
         </a>
@@ -50,25 +50,25 @@
         <aside class="side-bar">
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/recetasconAmor.png" alt="Recetas">
+                    <img src="publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
             <a href="sobreNosotros.html">
                 <div class="side-item">
-                    <img src="img/sobreNosotros.png" alt="sobreNosotros">
+                    <img src="publics/img/sobreNosotros.png" alt="sobreNosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/carrito.png" alt="Carrito">
+                    <img src="publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/express.png" alt="Express">
+                    <img src="publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
@@ -79,7 +79,7 @@
 
             <section class="catalogo-pasteles">
                 <div class="pastel-card">
-                    <img src="img/rapunzel.png" alt="Pastel de Fresa">
+                    <img src="publics/img/rapunzel.png" alt="Pastel de Fresa">
                     <h3>Pastel Corazón de Fresa</h3>
                     <p>Bizcocho de vainilla con relleno de fresa inspirado en Rapunzel.</p>
                     <p class="precio">₡13,000</p>
@@ -91,7 +91,7 @@
                 </div>
 
                 <div class="pastel-card">
-                    <img src="img/mashayoso.png" alt="Pastel Arcoíris">
+                    <img src="publics/img/mashayoso.png" alt="Pastel Arcoíris">
                     <h3>Pastel Arcoíris</h3>
                     <p>Bizcocho de colores con cobertura de fondant.</p>
                     <p class="precio">₡15,000</p>
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="pastel-card">
-                    <img src="img/rosas.png" alt="Pastel de Chocolate">
+                    <img src="publics/img/rosas.png" alt="Pastel de Chocolate">
                     <h3>Pastel de Chocolate</h3>
                     <p>Bizcocho húmedo de chocolate con ganache suave.</p>
                     <p class="precio">₡14,000</p>
@@ -209,11 +209,11 @@
         <aside class="right-panel">
             <h2>Pastelería ANA</h2>
             <a href="index.html">
-                <img src="img/logo.png" alt="Logo" class="logo-right">
+                <img src="publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
             <p class="texto-vertical">Cada pastel cuenta una historia</p>
             <div class="contacto">
-                <img src="img/telefono.png" alt="Teléfono">
+                <img src="publics/img/telefono.png" alt="Teléfono">
                 <p>Contáctenos</p>
             </div>
         </aside>
@@ -241,7 +241,7 @@
     
 
 
-    <script src="assets/js/main.js"></script>
+    <script src="publics/js/main.js"></script>
 </body>
 
 </html>

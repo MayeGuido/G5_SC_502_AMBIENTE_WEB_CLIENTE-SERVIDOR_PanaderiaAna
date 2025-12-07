@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros | Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/nosotros.css">
+    <link rel="stylesheet" href="publics/css/nosotros.css">
 </head>
 
 <body>
@@ -13,33 +13,33 @@
     <header class="top-menu">
         <a href="Perfil.html">
             <div class="icon-item">
-                <img src="img/perfil.png" alt="Perfil" width="80">
+                <img src="publics/img/perfil.png" alt="Perfil" width="80">
                 <p>Mi Perfil</p>
             </div>
         </a> <a href="pasteleria.html">
             <div class="icon-item">
-                <img src="img/pasteleria.png" alt="Pasteleria">
+                <img src="publics/img/pasteleria.png" alt="Pasteleria">
                 <p>Pasteleria</p>
             </div>
         </a>
         <a href="reposteria.html">
 
             <div class="icon-item">
-                <img src="img/reposteria.png" alt="Repostería">
+                <img src="publics/img/reposteria.png" alt="Repostería">
                 <p>Repostería</p>
             </div>
         </a>
         <a href="panaderia.html">
 
             <div class="icon-item">
-                <img src="img/panderia.png" alt="Panadería">
+                <img src="publics/img/panderia.png" alt="Panadería">
                 <p>Panadería</p>
             </div>
         </a>
         <a href="promociones.html">
 
             <div class="icon-item">
-                <img src="img/promociones.png" alt="Promociones">
+                <img src="publics/img/promociones.png" alt="Promociones">
                 <p>Promociones</p>
             </div>
         </a>
@@ -51,25 +51,25 @@
         <aside class="side-bar">
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/recetasconAmor.png" alt="Recetas">
+                    <img src="publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
             <a href="sobreNosotros.html">
                 <div class="side-item">
-                    <img src="img/sobreNosotros.png" alt="sobreNosotros">
+                    <img src="publics/img/sobreNosotros.png" alt="sobreNosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/carrito.png" alt="Carrito">
+                    <img src="publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/express.png" alt="Express">
+                    <img src="publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
@@ -77,7 +77,7 @@
 
         <main class="catalogo-container">
             <section class="historia">
-                <img src="img/nosotros.jpg" alt="Panadería ANA" class="historia-img">
+                <img src="publics/img/nosotros.jpg" alt="Panadería ANA" class="historia-img">
                 <div class="historia-texto">
                     <h1>Nuestra Historia</h1>
                     <p>
@@ -93,17 +93,17 @@
                 <h2> Nuestro Equipo</h2>
                 <div class="equipo-grid">
                     <div class="equipo-card">
-                        <img src="img/equipo1.jpg" alt="Ana">
+                        <img src="publics/img/equipo1.jpg" alt="Ana">
                         <h4>Ana Rodríguez</h4>
                         <p>Fundadora & Maestra Panadera</p>
                     </div>
                     <div class="equipo-card">
-                        <img src="img/equipo2.jpg" alt="Carlos">
+                        <img src="publics/img/equipo2.jpg" alt="Carlos">
                         <h4>Carlos Jiménez</h4>
                         <p>Chef Pastelero</p>
                     </div>
                     <div class="equipo-card">
-                        <img src="img/equipo1.jpg" alt="Lucía">
+                        <img src="publics/img/equipo1.jpg" alt="Lucía">
                         <h4>Lucía Torres</h4>
                         <p>Atención al Cliente</p>
                     </div>
@@ -114,19 +114,19 @@
                 <h2> Encuéntranos y Conéctate</h2>
                 <div class="extras-grid">
                     <div class="extra-card">
-                        <img src="img/ubicacion.png" alt="Ubicación">
+                        <img src="publics/img/ubicacion.png" alt="Ubicación">
                         <h4>Ubicación</h4>
                         <p>San José, Costa Rica</p>
                     </div>
 
                     <div class="extra-card">
-                        <img src="img/redes.png" alt="Facebook">
+                        <img src="publics/img/redes.png" alt="Facebook">
                         <h4>Redes Sociales</h4>
                         <p>@PanaderiaANA</p>
                     </div>
 
                     <div class="extra-card">
-                        <img src="img/compartir.png" alt="Compartir">
+                        <img src="publics/img/compartir.png" alt="Compartir">
                         <h4>Comparte Nuestra Página</h4>
                         <button onclick="navigator.share({title: 'Panadería ANA', url: window.location.href})">
                             Compartir
@@ -139,11 +139,11 @@
         <aside class="right-panel">
             <h2>Panadería ANA</h2>
             <a href="index.html">
-                <img src="img/logo.png" alt="Logo" class="logo-right">
+                <img src="publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
             <p class="texto-vertical">Más de una década compartiendo dulzura</p>
             <div class="contacto">
-                <img src="img/telefono.png" alt="Teléfono">
+                <img src="publics/img/telefono.png" alt="Teléfono">
                 <p>Contáctenos</p>
             </div>
         </aside>
@@ -152,7 +152,7 @@
 
   
 
-    <script src="assets/js/main.js"></script>
+    <script src="publics/js/main.js"></script>
 </body>
 
 </html>

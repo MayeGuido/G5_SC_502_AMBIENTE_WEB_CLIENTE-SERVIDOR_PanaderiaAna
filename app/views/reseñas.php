@@ -5,45 +5,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reseñas - Panadería y Repostería ANA</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/estrellas.css" />
+  <link rel="stylesheet" href="publics/css/styles.css" />
+  <link rel="stylesheet" href="publics/css/estrellas.css" />
 </head>
 
 <body>
 
   <header class="hero">
     <a href="index.html" class="no-link">
-      <img src="img/logo.png" alt="Logo" class="logo" />
+      <img src="publics/img/logo.png" alt="Logo" class="logo" />
     </a>
 
     <a href="Perfil.html">
       <div class="icon-item">
-        <img src="img/perfil.png" alt="Perfil" width="80">
+        <img src="publics/img/perfil.png" alt="Perfil" width="80">
         <p>Mi Perfil</p>
       </div>
     </a>
     <div class="hero-top-icons">
       <a href="pasteleria.html" class="no-link">
         <div class="icon-item">
-          <img src="img/pasteleria.png" alt="Pasteleria" />
+          <img src="publics/img/pasteleria.png" alt="Pasteleria" />
           <p>Pastelería</p>
         </div>
       </a>
       <a href="reposteria.html" class="no-link">
         <div class="icon-item">
-          <img src="img/reposteria.png" alt="Repostería" />
+          <img src="publics/img/reposteria.png" alt="Repostería" />
           <p>Repostería</p>
         </div>
       </a>
       <a href="panaderia.html" class="no-link">
         <div class="icon-item">
-          <img src="img/panderia.png" alt="Panadería" />
+          <img src="publics/img/panderia.png" alt="Panadería" />
           <p>Panadería</p>
         </div>
       </a>
       <a href="promociones.html" class="no-link">
         <div class="icon-item">
-          <img src="img/promociones.png" alt="Promociones" />
+          <img src="publics/img/promociones.png" alt="Promociones" />
           <p>Promociones</p>
         </div>
       </a>
@@ -54,32 +54,32 @@
     <div class="hero-buttons">
       <a href="recetas.html" class="no-link">
         <div class="btn-item">
-          <img src="img/recetasconAmor.png" alt="Recetas" />
+          <img src="publics/img/recetasconAmor.png" alt="Recetas" />
           <p>Recetas con Amor</p>
         </div>
       </a>
 
       <a href="sobreNosotros.html" class="no-link">
         <div class="btn-item">
-          <img src="img/sobreNosotros.png" alt="Sobre Nosotros" />
+          <img src="publics/img/sobreNosotros.png" alt="Sobre Nosotros" />
           <p>Sobre Nosotros</p>
         </div>
       </a>
 
       <div class="btn-item carrito-btn" id="btnCarritoIndex">
-        <img src="img/carrito.png" alt="Carrito de Compras" />
+        <img src="publics/img/carrito.png" alt="Carrito de Compras" />
         <p>Carrito de Compras</p>
       </div>
 
       <div class="btn-item">
-        <img src="img/express.png" alt="Pedido Express" />
+        <img src="publics/img/express.png" alt="Pedido Express" />
         <p>Pedido Express</p>
       </div>
     </div>
 
     <div class="buscador">
       <input type="text" placeholder="Buscar..." />
-      <button><img src="img/icono-buscar.png" alt="Buscar" /></button>
+      <button><img src="publics/img/icono-buscar.png" alt="Buscar" /></button>
     </div>
   </header>
 
@@ -116,15 +116,15 @@
   <footer>
     <div class="footer-icons">
       <div class="footer-btn" id="btnContactenosIndex">
-        <img src="img/contactenos.png" alt="Contáctenos" />
+        <img src="publics/img/contactenos.png" alt="Contáctenos" />
         <p>Contáctenos</p>
       </div>
       <div class="footer-btn" id="btnPreguntasIndex">
-        <img src="img/preguntas.png" alt="Preguntas" />
+        <img src="publics/img/preguntas.png" alt="Preguntas" />
         <p>Preguntas</p>
       </div>
       <div class="footer-btn" id="btnResenasIndex">
-        <img src="img/reseñas.png" alt="Reseñas" />
+        <img src="publics/img/reseñas.png" alt="Reseñas" />
         <p>Reseñas</p>
       </div>
     </div>
@@ -141,7 +141,7 @@
     </div>
   </div>
 
-  <script src="assets/js/main.js"></script>
+  <script src="publics/js/main.js"></script>
 </body>
 
 </html>

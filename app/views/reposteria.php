@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Panadería ANA</title>
-    <link rel="stylesheet" href="assets/css/stylesPanaderia.css">
+    <link rel="stylesheet" href="publics/css/stylesPanaderia.css">
 </head>
 
 <body class="catalogo-body">
@@ -13,35 +13,36 @@
     <header class="top-menu">
         <a href="Perfil.html">
             <div class="icon-item">
-                <img src="img/perfil.png" alt="Perfil" width="80">
+                <img src="publics/img/perfil.png" alt="Perfil" width=""
+                class="perfil-icon">
                 <p>Mi Perfil</p>
             </div>
         </a>
         <div class="top-icons">
             <a href="pasteleria.html">
                 <div class="icon-item">
-                    <img src="img/pasteleria.png" alt="Pasteleria">
+                    <img src="publics/img/pasteleria.png" alt="Pasteleria">
                     <p>Pasteleria</p>
                 </div>
             </a>
             <a href="reposteria.html">
 
                 <div class="icon-item">
-                    <img src="img/reposteria.png" alt="Repostería">
+                    <img src="publics/img/reposteria.png" alt="Repostería">
                     <p>Repostería</p>
                 </div>
             </a>
             <a href="panaderia.html">
 
                 <div class="icon-item">
-                    <img src="img/panderia.png" alt="Panadería">
+                    <img src="publics/img/panderia.png" alt="Panadería">
                     <p>Panadería</p>
                 </div>
             </a>
             <a href="promociones.html">
 
                 <div class="icon-item">
-                    <img src="img/promociones.png" alt="Promociones">
+                    <img src="publics/img/promociones.png" alt="Promociones">
                     <p>Promociones</p>
                 </div>
             </a>
@@ -54,25 +55,25 @@
         <aside class="side-bar">
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/recetasconAmor.png" alt="Recetas">
+                    <img src="publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
             <a href="sobreNosotros.html">
                 <div class="side-item">
-                    <img src="img/sobreNosotros.png" alt="sobreNosotros">
+                    <img src="publics/img/sobreNosotros.png" alt="sobreNosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/carrito.png" alt="Carrito">
+                    <img src="publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
             <a href="recetas.html">
                 <div class="side-item">
-                    <img src="img/express.png" alt="Express">
+                    <img src="publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
@@ -81,77 +82,86 @@
 
 
         <section class="catalogo-container">
-            <div class="fila-producto">
-                <img src="img/baguet.png" alt="Baguette" class="img-producto">
-                <div class="producto-card">
-                    <h3>Baguette</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
 
             <div class="fila-producto">
-                <img src="img/pizzita.png" alt="Pizzita" class="img-producto">
-                <div class="producto-card">
-                    <h3>Pizzita</h3>
-                    <p>Descripción de ingredientes</p>
-                    <div class="estrellas"></div>
-                    <div class="precio">500 c/u</div>
-                    <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
-                        <div class="cantidad">
-                            <input type="number">
-                        </div>
-                        <button class="btn-express">Envío Express</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fila-producto">
-                <img src="img/pancarne.png" alt="Pan de carne" class="img-producto">
+                <img src="publics/img/pedazoQueque.png" alt="Pan de carne" class="img-producto">
                 <div class="producto-card">
                     <h3>Pan de carne</h3>
                     <p>Descripción de ingredientes</p>
                     <div class="estrellas"></div>
                     <div class="precio">600 c/u</div>
                     <div class="acciones">
-                        <button class="btn-agregar">Añadir al carrito</button>
+                        <button class="btn-agregar">
+                            <img src="publics/img/carrito.png" alt="" width="25">
+                            Añadir al carrito</button>
                         <div class="cantidad">
                             <input type="number">
                         </div>
-                        <button class="btn-express">Envío Express</button>
+                        <button class="btn-express">
+                            <img src="publics/img/express.png" alt="" width="25">
+                            Envío Express</button>
                     </div>
                 </div>
             </div>
+            <div class="fila-producto">
+                <img src="publics/img/alfajor.png" alt="Pan de carne" class="img-producto">
+                <div class="producto-card">
+                    <h3>Pan de carne</h3>
+                    <p>Descripción de ingredientes</p>
+                    <div class="estrellas"></div>
+                    <div class="precio">600 c/u</div>
+                    <div class="acciones">
+                        <button class="btn-agregar">
+                            <img src="publics/img/carrito.png" alt="" width="25">
+                            Añadir al carrito</button>
+                        <div class="cantidad">
+                            <input type="number">
+                        </div>
+                        <button class="btn-express">
+                            <img src="publics/img/express.png" alt="" width="25">
+                            Envío Express</button>
+                    </div>
+                </div>
+            </div>
+            <div class="fila-producto">
+                <img src="publics/img/tresleches.png" alt="Pan de carne" class="img-producto">
+                <div class="producto-card">
+                    <h3>Pan de carne</h3>
+                    <p>Descripción de ingredientes</p>
+                    <div class="estrellas"></div>
+                    <div class="precio">600 c/u</div>
+                    <div class="acciones">
+                        <button class="btn-agregar">
+                            <img src="publics/img/carrito.png" alt="" width="25">
+                            Añadir al carrito</button>
+                        <div class="cantidad">
+                            <input type="number">
+                        </div>
+                        <button class="btn-express">
+                            <img src="publics/img/express.png" alt="" width="25">
+                            Envío Express</button>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <aside class="right-panel">
             <div class="right-overlay">
                 <h2>Panadería ANA</h2>
                 <a href="index.html">
-                    <img src="img/logo.png" class="logo-right" alt="Logo ANA">
+                    <img src="publics/img/logo.png" class="logo-right" alt="Logo ANA">
                 </a>
                 <p class="texto-vertical">Más de 10 años de pasión, esfuerzo y dulzura en cada creación</p>
                 <div class="contacto">
-                    <img src="img/contactenos.png" alt="Contacto">
+                    <img src="publics/img/contactenos.png" alt="Contacto">
                     <p>Contáctenos</p>
                 </div>
             </div>
         </aside>
     </main>
 
-   
-
-    <script src="assets/js/main.js"></script>
-
+    <script src="publics/js/main.js"></script>
 
 </body>
 
