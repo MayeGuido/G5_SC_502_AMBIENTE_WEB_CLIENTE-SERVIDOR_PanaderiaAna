@@ -11,7 +11,7 @@
 
     <div class="registro-container">
         <div class="logo-container">
-            <a href="index.html">
+            <a href="index.php">
             <img src="publics/img/logo_registro.png" alt="Logo">
             </a>
         </div>

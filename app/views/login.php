@@ -15,7 +15,7 @@
 
     <div class="login-container">
         <div class="logo-container">
-             <a href="index.html">
+             <a href="index.php">
             <img src="publics/img/logo_registro.png" alt="Logo">
             </a>
         </div>
@@ -31,7 +31,7 @@
                 <input class="inputs" type="password" placeholder="contraseña">
             </div>
             <div class="h3-container">
-                <h3><a href="registro.html">Sign up</a></h3>
+                <h3><a href="registro.php">Sign up</a></h3>
             </div>
 
             <div class="button">

@@ -11,11 +11,11 @@
 <body>
 
   <header class="hero">
-    <a href="index.html" class="no-link">
+    <a href="app/views/index.php" class="no-link">
       <img src="publics/img/logo.png" alt="Logo" class="logo" />
     </a>
 
-    <a href="Perfil.html" class="no-link">
+    <a href="app/views/Perfil.php" class="no-link">
       <div class="icon-item">
         <img src="publics/img/perfil.png" alt="Perfil" width="80" >
         <p >Mi Perfil</p>
@@ -25,31 +25,31 @@
 
 
     <div class="hero-top-icons">
-      <a href="pasteleria.html" class="no-link">
+      <a href="app/views/pasteleria.php" class="no-link">
         <div class="icon-item">
           <img src="publics/img/pasteleria.png" alt="Pasteleria" />
           <p>Pastelería</p>
         </div>
       </a>
-      <a href="reposteria.html" class="no-link">
+      <a href="app/views/reposteria.php" class="no-link">
         <div class="icon-item">
           <img src="publics/img/reposteria.png" alt="Repostería" />
           <p>Repostería</p>
         </div>
       </a>
-      <a href="panaderia.html" class="no-link">
+      <a href="app/views/panaderia.php" class="no-link">
         <div class="icon-item">
           <img src="publics/img/panderia.png" alt="Panadería" />
           <p>Panadería</p>
         </div>
       </a>
-      <a href="promociones.html" class="no-link">
+      <a href="app/views/promociones.php" class="no-link">
         <div class="icon-item">
           <img src="publics/img/promociones.png" alt="Promociones" />
           <p>Promociones</p>
         </div>
       </a>
-        <a href="login.html" class="no-link">
+        <a href="app/views/login.php" class="no-link">
       <div class="icon-item">
         <img src="publics/img/login.png" alt="login">
         <p>Login</p>
@@ -60,14 +60,14 @@
     <h1 class="titulo">Panadería y Repostería ANA</h1>
 
     <div class="hero-buttons">
-      <a href="recetas.html" class="no-link">
+      <a href="app/views/recetas.php" class="no-link">
         <div class="btn-item">
           <img src="publics/img/recetasconAmor.png" alt="Recetas" />
           <p>Recetas con Amor</p>
         </div>
       </a>
 
-      <a href="sobreNosotros.html" class="no-link">
+      <a href="app/views/sobreNosotros.php" class="no-link">
         <div class="btn-item">
           <img src="publics/img/sobreNosotros.png" alt="Sobre Nosotros" />
           <p>Sobre Nosotros</p>

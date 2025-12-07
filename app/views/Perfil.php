@@ -12,7 +12,7 @@
     <header class="perfil-header">
         <img src="publics/img/logo.png" alt="Logo" class="logo" />
         <h1>Perfil del Usuario</h1>
-        <a href="index.html" class="btn-home"><img src="publics/img/inicio.png" alt="" width="30px"></a>
+        <a href="index.php" class="btn-home"><img src="publics/img/inicio.png" alt="" width="30px"></a>
     </header>
 
     <main class="perfil-container">

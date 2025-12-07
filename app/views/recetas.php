@@ -11,35 +11,35 @@
 <body>
 
     <header class="top-menu">
-        <a href="Perfil.html">
+        <a href="Perfil.php">
             <div class="icon-item">
                 <img src="publics/img/perfil.png" alt="Perfil" width="80">
                 <p>Mi Perfil</p>
             </div>
         </a>
         <div class="top-icons">
-            <a href="pasteleria.html">
+            <a href="pasteleria.php">
                 <div class="icon-item">
                     <img src="publics/img/pasteleria.png" alt="Pastelería">
                     <p>Pastelería</p>
                 </div>
             </a>
 
-            <a href="reposteria.html">
+            <a href="reposteria.php">
                 <div class="icon-item">
                     <img src="publics/img/reposteria.png" alt="Repostería">
                     <p>Repostería</p>
                 </div>
             </a>
 
-            <a href="panaderia.html">
+            <a href="panaderia.php">
                 <div class="icon-item">
                     <img src="publics/img/panderia.png" alt="Panadería">
                     <p>Panadería</p>
                 </div>
             </a>
 
-            <a href="promociones.html">
+            <a href="promociones.php">
                 <div class="icon-item">
                     <img src="publics/img/promociones.png" alt="Promociones">
                     <p>Promociones</p>
@@ -52,14 +52,14 @@
     <div class="catalogo-layout">
 
         <aside class="side-bar">
-            <a href="recetas.html">
+            <a href="recetas.php">
                 <div class="side-item">
                     <img src="publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
 
-            <a href="sobreNosotros.html">
+            <a href="sobreNosotros.php">
                 <div class="side-item">
                     <img src="publics/img/sobreNosotros.png" alt="Sobre Nosotros">
                     <p>Sobre Nosotros</p>
@@ -118,7 +118,7 @@
 
         <aside class="right-panel">
             <h2>Recetas con Amor</h2>
-            <a href="index.html">
+            <a href="index.php">
                 <img src="publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
             <p class="texto-vertical">

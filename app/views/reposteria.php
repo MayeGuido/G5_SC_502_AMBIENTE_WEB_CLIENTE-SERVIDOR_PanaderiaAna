@@ -11,7 +11,7 @@
 <body class="catalogo-body">
 
     <header class="top-menu">
-        <a href="Perfil.html">
+        <a href="app/views/Perfil.php">
             <div class="icon-item">
                 <img src="publics/img/perfil.png" alt="Perfil" width=""
                 class="perfil-icon">
@@ -19,27 +19,27 @@
             </div>
         </a>
         <div class="top-icons">
-            <a href="pasteleria.html">
+            <a href="app/views/pasteleria.php">
                 <div class="icon-item">
                     <img src="publics/img/pasteleria.png" alt="Pasteleria">
                     <p>Pasteleria</p>
                 </div>
             </a>
-            <a href="reposteria.html">
+            <a href="app/views/reposteria.php">
 
                 <div class="icon-item">
                     <img src="publics/img/reposteria.png" alt="Repostería">
                     <p>Repostería</p>
                 </div>
             </a>
-            <a href="panaderia.html">
+            <a href="app/views/panaderia.php">
 
                 <div class="icon-item">
                     <img src="publics/img/panderia.png" alt="Panadería">
                     <p>Panadería</p>
                 </div>
             </a>
-            <a href="promociones.html">
+            <a href="app/views/promociones.php">
 
                 <div class="icon-item">
                     <img src="publics/img/promociones.png" alt="Promociones">
@@ -53,25 +53,25 @@
     <main class="catalogo-layout">
 
         <aside class="side-bar">
-            <a href="recetas.html">
+            <a href="app/views/recetas.php">
                 <div class="side-item">
                     <img src="publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
-            <a href="sobreNosotros.html">
+            <a href="app/views/sobreNosotros.php">
                 <div class="side-item">
                     <img src="publics/img/sobreNosotros.png" alt="sobreNosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
-            <a href="recetas.html">
+            <a href="app/views/recetas.php">
                 <div class="side-item">
                     <img src="publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
-            <a href="recetas.html">
+            <a href="app/views/recetas.php">
                 <div class="side-item">
                     <img src="publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
@@ -149,7 +149,7 @@
         <aside class="right-panel">
             <div class="right-overlay">
                 <h2>Panadería ANA</h2>
-                <a href="index.html">
+                <a href="app/views/index.php">
                     <img src="publics/img/logo.png" class="logo-right" alt="Logo ANA">
                 </a>
                 <p class="texto-vertical">Más de 10 años de pasión, esfuerzo y dulzura en cada creación</p>
