@@ -3,7 +3,6 @@ require_once __DIR__ . '/../../config/database.php';
 
 class ProductoModel
 {
-
     private $db;
 
     public function __construct()
@@ -25,6 +24,12 @@ class ProductoModel
         return $this->db->query($sql)->fetchAll();
     }
 
-    
-
+    public function obtenerPorId($id)
+    {
+        $sql = "SELECT * FROM productos WHERE id = ?";
+        $query = $this->db->prepare($sql);
+        $query->execute([$id]);
+        return $query->fetch();
+    }
 }
+

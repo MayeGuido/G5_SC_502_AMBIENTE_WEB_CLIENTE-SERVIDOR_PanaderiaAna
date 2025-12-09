@@ -34,23 +34,28 @@ CREATE TABLE inventario (
 -- TABLA PEDIDOS
 CREATE TABLE pedidos (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    usuario_id INT NOT NULL,
+    usuario_id INT NULL,
+    nombre_cliente VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
+    direccion TEXT NOT NULL,
     total DECIMAL(10,2) NOT NULL,
-    estado ENUM('pendiente','en_proceso','listo','entregado') DEFAULT 'pendiente',
-    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    estado ENUM('pendiente','preparando','enviado','entregado','cancelado') DEFAULT 'pendiente',
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
--- DETALLE DE PEDIDO
-CREATE TABLE pedido_detalle (
+-- TABLA DETALLE DE PEDIDOS
+CREATE TABLE pedido_detalles (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pedido_id INT NOT NULL,
     producto_id INT NOT NULL,
     cantidad INT NOT NULL,
+    precio_unitario DECIMAL(10,2) NOT NULL,
     subtotal DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE,
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
     FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
+
 
 -- TABLA RECETAS
 CREATE TABLE recetas (
@@ -69,3 +74,4 @@ CREATE TABLE nosotros (
     vision TEXT,
     imagen VARCHAR(255)
 );
+

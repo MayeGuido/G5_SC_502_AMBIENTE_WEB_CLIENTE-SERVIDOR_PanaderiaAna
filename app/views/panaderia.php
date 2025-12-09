@@ -78,6 +78,8 @@ $productos = $controller->mostrarPanaderia();
                 <div class="side-item">
                     <img src="/Panaderia/publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
+                    <button class="btn-agregar" data-id="<?= $p['id']; ?>"> Añadir al carrito </button>
+                <a href="carrito.php?accion=agregar&id=<?= $p['id']; ?>" class="btn-agregar"> Añadir al carrito </a>
                 </div>
             </a>
 
