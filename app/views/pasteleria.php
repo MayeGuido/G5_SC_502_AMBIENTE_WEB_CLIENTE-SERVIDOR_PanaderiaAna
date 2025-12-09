@@ -1,3 +1,12 @@
+<?php
+// Cargar el controlador
+require_once __DIR__ . '/../controllers/PasteleriaController.php';
+$controller = new PasteleriaController();
+
+// Obtener productos categoría Pastelería desde la BD
+$productos = $controller->pasteleria();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,41 +14,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería | Panadería ANA</title>
-    <link rel="stylesheet" href="publics/css/pasteleria.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Panaderia/publics/css/pasteleria.css">
 </head>
 
 <body>
 
+    <!-- MENÚ SUPERIOR -->
     <header class="top-menu">
         <a href="Perfil.php">
             <div class="icon-item">
-                <img src="publics/img/perfil.png" alt="Perfil" width="80">
+                <img src="/Panaderia/publics/img/perfil.png" alt="Perfil" width="80">
                 <p>Mi Perfil</p>
             </div>
-        </a> <a href="pasteleria.php">
+        </a>
+
+        <a href="pasteleria.php">
             <div class="icon-item">
-                <img src="publics/img/pasteleria.png" alt="Pasteleria">
-                <p>Pasteleria</p>
+                <img src="/Panaderia/publics/img/pasteleria.png" alt="Pastelería">
+                <p>Pastelería</p>
             </div>
         </a>
-        <a href="reposteria.php">
 
+        <a href="reposteria.php">
             <div class="icon-item">
-                <img src="publics/img/reposteria.png" alt="Repostería">
+                <img src="/Panaderia/publics/img/reposteria.png" alt="Repostería">
                 <p>Repostería</p>
             </div>
         </a>
-        <a href="panaderia.php">
 
+        <a href="panaderia.php">
             <div class="icon-item">
-                <img src="publics/img/panderia.png" alt="Panadería">
+                <img src="/Panaderia/publics/img/panderia.png" alt="Panadería">
                 <p>Panadería</p>
             </div>
         </a>
-        <a href="promociones.php">
 
+        <a href="promociones.php">
             <div class="icon-item">
-                <img src="publics/img/promociones.png" alt="Promociones">
+                <img src="/Panaderia/publics/img/promociones.png" alt="Promociones">
                 <p>Promociones</p>
             </div>
         </a>
@@ -47,75 +61,82 @@
 
     <div class="catalogo-layout">
 
+        <!-- BARRA LATERAL -->
         <aside class="side-bar">
             <a href="recetas.php">
                 <div class="side-item">
-                    <img src="publics/img/recetasconAmor.png" alt="Recetas">
+                    <img src="/Panaderia/publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
+
             <a href="sobreNosotros.php">
                 <div class="side-item">
-                    <img src="publics/img/sobreNosotros.png" alt="sobreNosotros">
+                    <img src="/Panaderia/publics/img/sobreNosotros.png" alt="Sobre Nosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
-            <a href="recetas.php">
+
+            <a href="carrito.php">
                 <div class="side-item">
-                    <img src="publics/img/carrito.png" alt="Carrito">
+                    <img src="/Panaderia/publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
-            <a href="recetas.php">
+
+            <a href="express.php">
                 <div class="side-item">
-                    <img src="publics/img/express.png" alt="Express">
+                    <img src="/Panaderia/publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
         </aside>
 
+        <!-- CONTENIDO PRINCIPAL -->
         <main class="catalogo-container">
-            <h1 class="titulo"> Diseña tu pastel o elige uno de nuestros modelos</h1>
+
+            <h1 class="titulo">Pasteles disponibles</h1>
 
             <section class="catalogo-pasteles">
-                <div class="pastel-card">
-                    <img src="publics/img/rapunzel.png" alt="Pastel de Fresa">
-                    <h3>Pastel Corazón de Fresa</h3>
-                    <p>Bizcocho de vainilla con relleno de fresa inspirado en Rapunzel.</p>
-                    <p class="precio">₡13,000</p>
-                    <div class="card-buttons">
-                        <button class="btn-detalles">Detalles</button>
-                        <button class="btn-personalizar" data-sabor="vainilla" data-relleno="fresa" data-color="#ffb6c1"
-                            data-precio="13000" data-forma="corazón">Personalizar</button>
-                    </div>
-                </div>
 
-                <div class="pastel-card">
-                    <img src="publics/img/mashayoso.png" alt="Pastel Arcoíris">
-                    <h3>Pastel Arcoíris</h3>
-                    <p>Bizcocho de colores con cobertura de fondant.</p>
-                    <p class="precio">₡15,000</p>
-                    <div class="card-buttons">
-                        <button class="btn-detalles">Detalles</button>
-                        <button class="btn-personalizar" data-sabor="vainilla" data-relleno="mantequilla"
-                            data-color="#f0f" data-precio="15000" data-forma="cuadrado">Personalizar</button>
-                    </div>
-                </div>
+                <?php if (!empty($productos)): ?>
+                    <?php foreach ($productos as $p): ?>
+                        <div class="pastel-card">
 
-                <div class="pastel-card">
-                    <img src="publics/img/rosas.png" alt="Pastel de Chocolate">
-                    <h3>Pastel de Chocolate</h3>
-                    <p>Bizcocho húmedo de chocolate con ganache suave.</p>
-                    <p class="precio">₡14,000</p>
-                    <div class="card-buttons">
-                        <button class="btn-detalles">Detalles</button>
-                        <button class="btn-personalizar" data-sabor="chocolate" data-relleno="chocolate"
-                            data-color="#5a382d" data-precio="14000" data-forma="redondo">Personalizar</button>
-                    </div>
-                </div>
+                            <img src="<?= $p['imagen']; ?>" alt="<?= $p['nombre']; ?>">
+
+                            <h3><?= $p['nombre']; ?></h3>
+
+                            <p><?= $p['descripcion']; ?></p>
+
+                            <p class="precio">₡<?= number_format($p['precio'], 2); ?></p>
+
+                            <div class="card-buttons">
+                                <button class="btn-detalles">Detalles</button>
+
+                                <button class="btn-personalizar"
+                                    data-sabor="vainilla"
+                                    data-relleno="crema"
+                                    data-color="#ffb6c1"
+                                    data-precio="<?= $p['precio']; ?>"
+                                    data-forma="redondo">
+                                    Personalizar
+                                </button>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+
+                <?php else: ?>
+                    <p class="no-productos">
+                        No hay pasteles disponibles en la base de datos.
+                    </p>
+                <?php endif; ?>
+
             </section>
 
+            <!-- FORMULARIO DE PERSONALIZACIÓN -->
             <form class="form-pastel" id="formPastel">
+
                 <h2>Personaliza tu pastel</h2>
 
                 <div class="form-group">
@@ -163,14 +184,13 @@
 
                 <div class="form-group">
                     <label>Decoración:</label>
-                    <label><input type="radio" name="decoracion" value="panaderia" required> Que la panadería la
-                        decore</label>
+                    <label><input type="radio" name="decoracion" value="panaderia" required> Que la panadería la decore</label>
                     <label><input type="radio" name="decoracion" value="propia"> Yo añadiré la decoración</label>
                 </div>
 
                 <div class="form-group">
                     <label for="mensaje">Mensaje en el pastel:</label>
-                    <input type="text" id="mensaje" name="mensaje" placeholder="Ejemplo: ¡Feliz cumpleaños, Ana!">
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Escriba un mensaje">
                 </div>
 
                 <div class="form-group">
@@ -181,8 +201,7 @@
 
                 <div class="form-group">
                     <label for="detalles">Detalles adicionales:</label>
-                    <textarea id="detalles" name="detalles" rows="3"
-                        placeholder="Ejemplo: Quiero flores de chantilly y perlas blancas."></textarea>
+                    <textarea id="detalles" name="detalles" rows="3"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -202,46 +221,31 @@
                 </div>
 
                 <button type="submit" class="btn-enviar">Enviar pedido</button>
+
             </form>
         </main>
 
-
+        <!-- PANEL DERECHO -->
         <aside class="right-panel">
             <h2>Pastelería ANA</h2>
-            <a href="index.php">
-                <img src="publics/img/logo.png" alt="Logo" class="logo-right">
+
+            <a href="/Panaderia/index.php">
+                <img src="/Panaderia/publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
+
             <p class="texto-vertical">Cada pastel cuenta una historia</p>
+
             <div class="contacto">
-                <img src="publics/img/telefono.png" alt="Teléfono">
+                <img src="/Panaderia/publics/img/telefono.png" alt="Teléfono">
                 <p>Contáctenos</p>
             </div>
         </aside>
+
     </div>
 
+    <!-- JS -->
+    <script src="/Panaderia/publics/js/main.js"></script>
 
-    <div class="modal" id="modalDetalles">
-        <div class="modal-content">
-            <span class="cerrar">&times;</span>
-            <img id="modalImagen" src="" alt="Pastel" class="modal-img">
-            <h3 id="modalTitulo"></h3>
-            <p id="modalDescripcion"></p>
-            <p id="modalIngredientes"></p>
-            <p class="modal-precio" id="modalPrecio"></p>
-
-            <button id="btnPersonalizarModal" class="btn-personalizar">Personalizar este pastel</button>
-
-            <hr class="modal-divider">
-
-            <h4> También te pueden gustar:</h4>
-            <div id="recomendaciones" class="recomendaciones"></div>
-        </div>
-    </div>
-
-    
-
-
-    <script src="publics/js/main.js"></script>
 </body>
 
 </html>

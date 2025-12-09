@@ -5,14 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil del Usuario | Panadería ANA</title>
-    <link rel="stylesheet" href="publics/css/Perfil.css" />
+    <link rel="stylesheet" href="/Panaderia/publics/css/Perfil.css" />
 </head>
 
 <body>
     <header class="perfil-header">
-        <img src="publics/img/logo.png" alt="Logo" class="logo" />
+        <img src="/Panaderia/publics/img/logo.png" alt="Logo" class="logo" />
         <h1>Perfil del Usuario</h1>
-        <a href="index.php" class="btn-home"><img src="publics/img/inicio.png" alt="" width="30px"></a>
+        <a href="/Panaderia/index.php" class="btn-home"><img src="/Panaderia/publics/img/inicio.png" alt="" width="30px"></a>
     </header>
 
     <main class="perfil-container">
@@ -34,7 +34,7 @@
         <section class="perfil-contenido" id="perfil-contenido">
             <h2>Bienvenido(a) a tu perfil</h2>
             <p>Selecciona una opción del menú para comenzar a gestionar tu cuenta.</p>
-            <img src="publics/img/fondo.png" alt="Decoración" class="decor-img" />
+            <img src="/Panaderia/publics/img/fondo.png" alt="Decoración" class="decor-img" />
         </section>
 
 
@@ -43,7 +43,7 @@
                 <h1 class="titulo-fav"> Tus Favoritos</h1>
                 <div class="fav-grid">
                     <div class="fav-card">
-                        <img src="publics/img/trensa_dulce.png" alt="Trenza dulce" class="fav-img" />
+                        <img src="/Panaderia/publics/img/trensa_dulce.png" alt="Trenza dulce" class="fav-img" />
                         <div class="fav-info">
                             <h3>Trenza dulce</h3>
                             <p>Deliciosa trenza elaborada con masa suave y crema pastelera.</p>
@@ -63,17 +63,17 @@
                 <h2 class="titulo-pago"> Métodos de Pago</h2>
                 <div class="tarjetas-pago">
                     <div class="metodo-card">
-                        <img src="publics/img/Tarjeta.png" alt="Pago con tarjeta" class="img-metodo" />
+                        <img src="/Panaderia/publics/img/Tarjeta.png" alt="Pago con tarjeta" class="img-metodo" />
                         <h3>Pago con Tarjeta</h3>
                         <button class="btn-pago" data-metodo="Tarjeta">Seleccionar</button>
                     </div>
                     <div class="metodo-card">
-                        <img src="publics/img/sinpe-movil.png" alt="Pago por SINPE" class="img-metodo" />
+                        <img src="/Panaderia/publics/img/sinpe-movil.png" alt="Pago por SINPE" class="img-metodo" />
                         <h3>SINPE Móvil</h3>
                         <button class="btn-pago" data-metodo="SINPE">Seleccionar</button>
                     </div>
                     <div class="metodo-card">
-                        <img src="publics/img/Efectivo.png
+                        <img src="/Panaderia/publics/img/Efectivo.png
                         " alt="Pago en efectivo" class="img-metodo" />
                         <h3>Pago en Efectivo</h3>
                         <button class="btn-pago" data-metodo="Efectivo">Seleccionar</button>
@@ -99,7 +99,7 @@
             <div class="inventario-container">
                 <h2 class="titulo-inventario"> Productos</h2>
                 <div class="producto-card">
-                    <img src="publics/assets/img/galleta.png" alt="Galleta" />
+                    <img src="/Panaderia/publics/assets/img/galleta.png" alt="Galleta" />
                     <h3>Galletas con Chips</h3>
                     <p>Deliciosas galletas artesanales con trocitos de chocolate.</p>
                     <p class="precio">₡1,200</p>
@@ -116,7 +116,7 @@
 
                     <div class="carrito-productos">
                         <div class="producto">
-                            <div class="imagen"><img src="publics/img/pizzita.png"></div>
+                            <div class="imagen"><img src="/Panaderia/publics/img/pizzita.png"></div>
                             <div class="info">
                                 <p class="nombre">Pizzita</p>
                                 <p class="precio">₡1000</p>
@@ -129,7 +129,7 @@
                         </div>
 
                         <div class="producto">
-                            <div class="imagen"><img src="publics/img/tresleches.png"></div>
+                            <div class="imagen"><img src="/Panaderia/publics/img/tresleches.png"></div>
                             <div class="info">
                                 <p class="nombre">Tres leches</p>
                                 <p class="precio">₡1200</p>
@@ -150,7 +150,7 @@
                 <aside class="carrito-derecha">
                     <div class="overlay">
                         <h2>Recetas con Amor</h2>
-                        <img src="publics/img/logo.png" alt="Logo" class="logo">
+                        <img src="/Panaderia/publics/img/logo.png" alt="Logo" class="logo">
                         <p class="texto-vertical">
                             Más de 10 años de pasión, esfuerzo y dulzura en cada creación 
                         </p>
@@ -222,28 +222,28 @@
 
                 <div class="admin-grid">
                     <div class="admin-card">
-                        <img src="publics/img/gestionUsuarios.png" alt="Gestión de usuarios" class="admin-icon">
+                        <img src="/Panaderia/publics/img/gestionUsuarios.png" alt="Gestión de usuarios" class="admin-icon">
                         <h3>Gestión de Usuarios</h3>
                         <p>Administra los usuarios del sistema, agrega nuevos y gestiona sus permisos y roles.</p>
                         <button class="btn-admin usuarios"> Entrar</button>
                     </div>
 
                     <div class="admin-card">
-                        <img src="publics/img/gestionProductos.png" alt="Gestión de productos" class="admin-icon">
+                        <img src="/Panaderia/publics/img/gestionProductos.png" alt="Gestión de productos" class="admin-icon">
                         <h3>Gestión de Productos</h3>
                         <p>Agrega, modifica o elimina productos del inventario y mantén actualizado el catálogo.</p>
                         <button class="btn-admin productos"> Entrar</button>
                     </div>
 
                     <div class="admin-card">
-                        <img src="publics/img/reporteVentas.png" alt="Reportes de ventas" class="admin-icon">
+                        <img src="/Panaderia/publics/img/reporteVentas.png" alt="Reportes de ventas" class="admin-icon">
                         <h3>Reportes de Ventas</h3>
                         <p>Consulta las estadísticas y resultados de ventas por día, semana o mes.</p>
                         <button class="btn-admin reportes"> Ver Reportes</button>
                     </div>
 
                     <div class="admin-card">
-                        <img src="publics/img/configuracion.png" alt="Configuración del sistema" class="admin-icon">
+                        <img src="/Panaderia/publics/img/configuracion.png" alt="Configuración del sistema" class="admin-icon">
                         <h3>Configuración del Sistema</h3>
                         <p>Ajusta parámetros generales, seguridad, apariencia y funcionamiento del sistema.</p>
                         <button class="btn-admin configuracion"> Configurar</button>
@@ -344,9 +344,9 @@
         <p>Panadería y Repostería ANA © 2025 — Hecho con amor </p>
     </footer>
 
-    <script src="publics/js/perfil.js"></script>
+    <script src="/Panaderia/publics/js/perfil.js"></script>
 
-    <script src="publics/js/admin.js"></script>
+    <script src="/Panaderia/publics/js/admin.js"></script>
 </body>
 
 </html>

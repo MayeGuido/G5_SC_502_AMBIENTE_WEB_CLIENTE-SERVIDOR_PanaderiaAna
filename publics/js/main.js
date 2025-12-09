@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnResenas) {
     btnResenas.addEventListener("click", () => {
-      window.location.href = "reseñas.html";
+      window.location.href = "views/reseñas.php";
     });
   }
 
@@ -206,17 +206,17 @@ const recetas = {
   "Pastel de chocolate": {
     descripcion: "Bizcocho húmedo de cacao con cobertura de chocolate derretido y relleno de crema.",
     ingredientes: "Harina, cacao, azúcar, mantequilla, huevos, leche, esencia de vainilla.",
-    imagen: "img/ququeChocolate.png"
+    imagen: " /Panaderia/publics/img/ququeChocolate.png"
   },
   "Queque seco": {
     descripcion: "Receta clásica, esponjosa y con suaves toques de vainilla.",
     ingredientes: "Harina, azúcar, mantequilla, huevos, esencia de vainilla, polvo de hornear.",
-    imagen: "img/quequeSeco.png"
+    imagen: " /Panaderia/publics/img/quequeSeco.png"
   },
   "Pizzita": {
     descripcion: "Receta clásica, con deliciosa salsa casera y mucho queso.",
     ingredientes: "Harina, mantequilla, huevos, mayonesa, polvo de hornear, mortadela, queso mozzarella, queso fresco, salsa de pizza.",
-    imagen: "img/pizzita.png"
+    imagen: " /Panaderia/publics/img/pizzita.png"
   }
 };
 
@@ -251,22 +251,29 @@ modal.addEventListener("click", e => { if (e.target === modal) modal.style.displ
 
 
 // Toast de éxito por el momento, para envio express y añadir a carrito 
-function mostrarToast(mensaje) {
-  const toast = document.createElement("div");
-  toast.className = "toast-exito";
-  toast.textContent = mensaje;
-  document.body.appendChild(toast);
-  setTimeout(() => toast.remove(), 2000);
-}
+// BOTÓN "AÑADIR AL CARRITO" EN LAS CATEGORÍAS
 document.querySelectorAll(".btn-agregar").forEach(btn => {
-  btn.addEventListener("click", () => {
-    mostrarToast(" Producto añadido al carrito");
-  });
-});
 
-document.querySelectorAll(".btn-express").forEach(btn => {
-  btn.addEventListener("click", () => {
-    mostrarToast(" Pedido Express solicitado");
-  });
-});
+    btn.addEventListener("click", function () {
 
+        let idProducto = this.getAttribute("data-id");
+
+        // input de cantidad (mismo bloque de botones)
+        let cantidadInput = this.parentElement.querySelector(".cantidad-input");
+        let cantidad = cantidadInput ? cantidadInput.value : 1;
+
+        fetch(`/Panaderia/app/controllers/CarritoController.php?action=agregar&id=${idProducto}&cantidad=${cantidad}`)
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Producto agregado al carrito");
+                } else {
+                    alert("Error: " + data.error);
+                }
+            })
+            .catch(error => {
+                console.error("Error en el fetch:", error);
+            });
+
+    });
+});

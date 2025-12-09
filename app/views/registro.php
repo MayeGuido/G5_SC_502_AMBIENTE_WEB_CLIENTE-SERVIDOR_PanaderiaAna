@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="publics/css/registro.css">
+    <link rel="stylesheet" href=" /Panaderia/publics/css/registro.css">
 </head>
 <body>
     <div class="registro">
 
     <div class="registro-container">
         <div class="logo-container">
-            <a href="index.php">
-            <img src="publics/img/logo_registro.png" alt="Logo">
+            <a href=" /Panaderia/index.php">
+            <img src=" /Panaderia/publics/img/logo_registro.png" alt="Logo">
             </a>
         </div>
         <h4>SIGN UP</h4>

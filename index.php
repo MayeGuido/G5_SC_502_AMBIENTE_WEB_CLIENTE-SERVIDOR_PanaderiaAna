@@ -11,7 +11,7 @@
 <body>
 
   <header class="hero">
-    <a href="app/views/index.php" class="no-link">
+    <a href="/Panaderia/index.php" class="no-link">
       <img src="publics/img/logo.png" alt="Logo" class="logo" />
     </a>
 

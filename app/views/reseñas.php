@@ -5,45 +5,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reseñas - Panadería y Repostería ANA</title>
-  <link rel="stylesheet" href="publics/css/styles.css" />
-  <link rel="stylesheet" href="publics/css/estrellas.css" />
+  <link rel="stylesheet" href=" /Panaderia/publics/css/styles.css" />
+  <link rel="stylesheet" href=" /Panaderia/publics/css/estrellas.css" />
 </head>
 
 <body>
 
   <header class="hero">
-    <a href="app/views/index.php" class="no-link">
-      <img src="publics/img/logo.png" alt="Logo" class="logo" />
+    <a href=" /Panaeria/index.php" class="no-link">
+      <img src=" /Panaderia/publics/img/logo.png" alt="Logo" class="logo" />
     </a>
 
-    <a href="app/views/Perfil.php">
+    <a href=" Perfil.php">
       <div class="icon-item">
-        <img src="publics/img/perfil.png" alt="Perfil" width="80">
+        <img src=" /Panaderia/publics/img/perfil.png" alt="Perfil" width="80">
         <p>Mi Perfil</p>
       </div>
     </a>
     <div class="hero-top-icons">
-      <a href="app/views/pasteleria.php" class="no-link">
+      <a href=" pasteleria.php" class="no-link">
         <div class="icon-item">
-          <img src="publics/img/pasteleria.png" alt="Pasteleria" />
+          <img src=" /Panaderia/publics/img/pasteleria.png" alt="Pasteleria" />
           <p>Pastelería</p>
         </div>
       </a>
-      <a href="app/views/reposteria.php" class="no-link">
+      <a href=" reposteria.php" class="no-link">
         <div class="icon-item">
-          <img src="publics/img/reposteria.png" alt="Repostería" />
+          <img src=" /Panaderia/publics/img/reposteria.png" alt="Repostería" />
           <p>Repostería</p>
         </div>
       </a>
-      <a href="app/views/panaderia.php" class="no-link">
+      <a href=" panaderia.php" class="no-link">
         <div class="icon-item">
-          <img src="publics/img/panderia.png" alt="Panadería" />
+          <img src=" /Panaderia/publics/img/panderia.png" alt="Panadería" />
           <p>Panadería</p>
         </div>
       </a>
-      <a href="app/views/promociones.php" class="no-link">
+      <a href=" promociones.php" class="no-link">
         <div class="icon-item">
-          <img src="publics/img/promociones.png" alt="Promociones" />
+          <img src=" /Panaderia/publics/img/promociones.png" alt="Promociones" />
           <p>Promociones</p>
         </div>
       </a>
@@ -52,34 +52,34 @@
     <h1 class="titulo">Reseñas de Clientes</h1>
 
     <div class="hero-buttons">
-      <a href="app/views/recetas.php" class="no-link">
+      <a href=" recetas.php" class="no-link">
         <div class="btn-item">
-          <img src="publics/img/recetasconAmor.png" alt="Recetas" />
+          <img src=" /Panaderia/publics/img/recetasconAmor.png" alt="Recetas" />
           <p>Recetas con Amor</p>
         </div>
       </a>
 
-      <a href="app/views/sobreNosotros.php" class="no-link">
+      <a href=" sobreNosotros.php" class="no-link">
         <div class="btn-item">
-          <img src="publics/img/sobreNosotros.png" alt="Sobre Nosotros" />
+          <img src=" /Panaderia/publics/img/sobreNosotros.png" alt="Sobre Nosotros" />
           <p>Sobre Nosotros</p>
         </div>
       </a>
 
       <div class="btn-item carrito-btn" id="btnCarritoIndex">
-        <img src="publics/img/carrito.png" alt="Carrito de Compras" />
+        <img src=" /Panaderia/publics/img/carrito.png" alt="Carrito de Compras" />
         <p>Carrito de Compras</p>
       </div>
 
       <div class="btn-item">
-        <img src="publics/img/express.png" alt="Pedido Express" />
+        <img src=" /Panaderia/publics/img/express.png" alt="Pedido Express" />
         <p>Pedido Express</p>
       </div>
     </div>
 
     <div class="buscador">
       <input type="text" placeholder="Buscar..." />
-      <button><img src="publics/img/icono-buscar.png" alt="Buscar" /></button>
+      <button><img src=" /Panaderia/publics/img/icono-buscar.png" alt="Buscar" /></button>
     </div>
   </header>
 
@@ -116,15 +116,15 @@
   <footer>
     <div class="footer-icons">
       <div class="footer-btn" id="btnContactenosIndex">
-        <img src="publics/img/contactenos.png" alt="Contáctenos" />
+        <img src=" /Panaderia/publics/img/contactenos.png" alt="Contáctenos" />
         <p>Contáctenos</p>
       </div>
       <div class="footer-btn" id="btnPreguntasIndex">
-        <img src="publics/img/preguntas.png" alt="Preguntas" />
+        <img src=" /Panaderia/publics/img/preguntas.png" alt="Preguntas" />
         <p>Preguntas</p>
       </div>
       <div class="footer-btn" id="btnResenasIndex">
-        <img src="publics/img/reseñas.png" alt="Reseñas" />
+        <img src=" /Panaderia/publics/img/reseñas.png" alt="Reseñas" />
         <p>Reseñas</p>
       </div>
     </div>
@@ -141,7 +141,7 @@
     </div>
   </div>
 
-  <script src="publics/js/main.js"></script>
+  <script src=" /Panaderia/publics/js/main.js"></script>
 </body>
 
 </html>

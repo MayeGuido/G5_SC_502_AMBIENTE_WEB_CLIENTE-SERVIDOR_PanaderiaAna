@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #e00064;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.btn-agregar, .btn-editar, .btn-eliminar, .btn-volver {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-agregar { background: #28a745; }
+.btn-editar { background: #007bff; }
+.btn-eliminar { background: #dc3545; }
+.btn-volver { background: #6c757d; }
+
+form {
+    max-width: 500px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
