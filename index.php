@@ -1,9 +1,45 @@
+<?php
+// ===============================
+// ROUTER PRINCIPAL
+// ===============================
+$pagina = $_GET['pagina'] ?? 'inicio';
+
+switch ($pagina) {
+
+    case 'contactenos':
+        require_once 'app/controllers/ContactenosController.php';
+        $controller = new ContactenosController();
+        $controller->index();
+        exit;
+        break;
+
+    case 'preguntas':
+        require_once 'app/controllers/PreguntasController.php';
+        $controller = new PreguntasController();
+        $controller->index();
+        exit;
+        break;
+
+    case 'inventario':
+        require_once 'app/controllers/InventarioController.php';
+        $controller = new InventarioController();
+        $controller->index();
+        exit;
+        break;
+
+    // Página principal
+    default:
+        // continúa a cargar el HTML de abajo
+        break;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panadería y Repostería ANA</title>
 
   <!-- CSS -->
@@ -189,25 +225,26 @@
   <footer>
     <div class="footer-icons">
 
-      <a href="app/views/contactenos.php" class="no-link">
+      <a href="index.php?pagina=contactenos" class="no-link">
         <div class="footer-btn" id="btnContactenosIndex">
           <img src="publics/img/contactenos.png" alt="Contáctenos">
           <p>Contáctenos</p>
         </div>
+      </a>
 
-        <a href="app/views/preguntas.php" class="no-link">
-          <div class="footer-btn" id="btnPreguntasIndex">
-            <img src="publics/img/preguntas.png" alt="Preguntas">
-            <p>Preguntas</p>
-          </div>
+      <a href="index.php?pagina=preguntas" class="no-link">
+        <div class="footer-btn" id="btnPreguntasIndex">
+          <img src="publics/img/preguntas.png" alt="Preguntas">
+          <p>Preguntas</p>
+        </div>
+      </a>
 
-          <a href="app/views/resenas.php" class="no-link">
-            <div class="footer-btn">
-              <img src="publics/img/reseñas.png" alt="Reseñas">
-              <p>Reseñas</p>
-            </div>
-          </a>
-
+      <a href="app/views/resenas.php" class="no-link">
+        <div class="footer-btn">
+          <img src="publics/img/reseñas.png" alt="Reseñas">
+          <p>Reseñas</p>
+        </div>
+      </a>
 
     </div>
 

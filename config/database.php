@@ -22,4 +22,7 @@ function getPDOConnection() {
         echo "❌ Error de conexión: " . $e->getMessage();
         die();
     }
+    function getConnection() {
+    return getPDOConnection();
+    }
 }
