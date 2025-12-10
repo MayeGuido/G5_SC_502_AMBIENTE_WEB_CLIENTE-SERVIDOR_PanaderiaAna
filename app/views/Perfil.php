@@ -33,7 +33,7 @@
                 <li data-section="metodosPago"> Métodos de Pago</li>
                 <li data-section="historialPagos"> Historial</li>
                 <li data-section="productos"> Productos</li>
-                <li data-section="inventario"> Inventario</li>
+                <li><a href="../../index.php?pagina=inventario">Inventario</a></li>
                 <li data-section="admin"> Administración</li>
                 <li data-section="contacto"> Contacto y Soporte</li>
             </ul>
