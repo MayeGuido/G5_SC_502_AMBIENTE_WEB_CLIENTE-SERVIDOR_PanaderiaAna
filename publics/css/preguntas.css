@@ -1,0 +1,97 @@
+/* ==========================================
+   ESTILOS PREGUNTAS — preguntas.css
+   ========================================== */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fff3e0;
+    color: #333;
+}
+
+/* TITULO */
+.titulo-preguntas {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2.4em;
+    color: #b83227;
+    font-weight: bold;
+}
+
+/* FORMULARIO */
+.formulario-preguntas {
+    width: 90%;
+    max-width: 620px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-preguntas label {
+    display: block;
+    font-weight: bold;
+    color: #a02624;
+    margin-bottom: 5px;
+}
+
+.formulario-preguntas input,
+.formulario-preguntas textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #f3a8a8;
+    background-color: #fff5f5;
+    font-size: 15px;
+}
+
+.btn-enviar-pregunta {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-enviar-pregunta:hover {
+    background-color: #e05555;
+}
+
+/* SECCIÓN FAQ */
+.faq {
+    width: 90%;
+    max-width: 700px;
+    margin: 50px auto 80px auto;
+}
+
+.faq-titulo {
+    text-align: center;
+    font-size: 2em;
+    color: #b83227;
+    margin-bottom: 25px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 15px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #a02624;
+}
+
+.faq-item p {
+    margin-top: 8px;
+    color: #444;
+}

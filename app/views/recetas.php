@@ -12,43 +12,43 @@ $recetas = $controller->index(); // traer todas las recetas
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería | Recetas con Amor</title>
-    <link rel="stylesheet" href="/Panaderia/publics/css/stylesPanaderia.css">
+    <link rel="stylesheet" href="../../publics/css/stylesPanaderia.css">
 </head>
 
 <body>
 
     <header class="top-menu">
-        <a href="Perfil.php">
+        <a href="../../index.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/perfil.png" alt="Perfil" width="80">
-                <p>Mi Perfil</p>
+                <img src="../../publics/img/logo_registro.png" alt="Inicio" width="80">
+                <p>Inicio</p>
             </div>
         </a>
         <div class="top-icons">
             <a href="pasteleria.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/pasteleria.png" alt="Pastelería">
+                    <img src="../../publics/img/pasteleria.png" alt="Pastelería">
                     <p>Pastelería</p>
                 </div>
             </a>
 
             <a href="reposteria.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/reposteria.png" alt="Repostería">
+                    <img src="../../publics/img/reposteria.png" alt="Repostería">
                     <p>Repostería</p>
                 </div>
             </a>
 
             <a href="panaderia.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/panderia.png" alt="Panadería">
+                    <img src="../../publics/img/panderia.png" alt="Panadería">
                     <p>Panadería</p>
                 </div>
             </a>
 
             <a href="promociones.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/promociones.png" alt="Promociones">
+                    <img src="../../publics/img/promociones.png" alt="Promociones">
                     <p>Promociones</p>
                 </div>
             </a>
@@ -61,28 +61,28 @@ $recetas = $controller->index(); // traer todas las recetas
         <aside class="side-bar">
             <a href="recetas.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/recetasconAmor.png" alt="Recetas">
+                    <img src="../../publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
 
             <a href="sobreNosotros.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/sobreNosotros.png" alt="Sobre Nosotros">
+                    <img src="../../publics/img/sobreNosotros.png" alt="Sobre Nosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
 
             <a href="#">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/carrito.png" alt="Carrito">
+                    <img src="../../publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
 
             <a href="#">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/express.png" alt="Pedido Express">
+                    <img src="../../publics/img/express.png" alt="Pedido Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
@@ -92,41 +92,44 @@ $recetas = $controller->index(); // traer todas las recetas
         <main class="catalogo-container">
 
             <?php if (!empty($recetas)): ?>
-                <?php foreach ($recetas as $r): ?>
-                    <div class="fila-producto">
-                        <img src="<?= $r['imagen']; ?>" alt="<?= $r['nombre']; ?>" class="img-producto">
-                        <div class="producto-card">
-                            <h3><?= $r['nombre']; ?></h3>
-                            <p><?= $r['descripcion']; ?></p>
-                            <div class="estrellas"></div>
+            <?php foreach ($recetas as $r): ?>
+            <div class="fila-producto">
+                <img src="../../<?= $r['imagen']; ?>" alt="<?= $r['nombre']; ?>" class="img-producto">
 
-                            <!-- Botón para abrir modal -->
-                            <button class="btn-ver"
-                                data-nombre="<?= htmlspecialchars($r['nombre']); ?>"
-                                data-descripcion="<?= htmlspecialchars($r['descripcion']); ?>"
-                                data-ingredientes="<?= htmlspecialchars($r['ingredientes']); ?>"
-                                data-imagen="<?= $r['imagen']; ?>"
-                            >Ver Receta</button>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
+                <div class="producto-card">
+                    <h3>
+                        <?= $r['nombre']; ?>
+                    </h3>
+                    <p>
+                        <?= $r['descripcion']; ?>
+                    </p>
+                    <div class="estrellas"></div>
+
+                    <!-- Botón para abrir modal -->
+                    <button class="btn-ver" data-nombre="<?= htmlspecialchars($r['nombre']); ?>"
+                        data-descripcion="<?= htmlspecialchars($r['descripcion']); ?>"
+                        data-ingredientes="<?= htmlspecialchars($r['ingredientes']); ?>"
+                        data-imagen="<?= $r['imagen']; ?>">Ver Receta</button>
+                </div>
+            </div>
+            <?php endforeach; ?>
             <?php else: ?>
-                <p>No hay recetas disponibles por el momento.</p>
+            <p>No hay recetas disponibles por el momento.</p>
             <?php endif; ?>
 
         </main>
 
         <aside class="right-panel">
             <h2>Recetas con Amor</h2>
-            <a href="/Panaderia/index.php">
-                <img src="/Panaderia/publics/img/logo.png" alt="Logo" class="logo-right">
+            <a href="index.php">
+                <img src="../../publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
             <p class="texto-vertical">
                 Más de 10 años de pasión, esfuerzo y dulzura en cada creación
             </p>
 
             <div class="contacto">
-                <img src="/Panaderia/publics/img/contactenos.png" alt="Teléfono">
+                <img src="../../publics/img/contactenos.png" alt="Teléfono">
                 <p>Contáctenos</p>
             </div>
         </aside>
@@ -175,4 +178,5 @@ $recetas = $controller->index(); // traer todas las recetas
     </script>
 
 </body>
+
 </html>

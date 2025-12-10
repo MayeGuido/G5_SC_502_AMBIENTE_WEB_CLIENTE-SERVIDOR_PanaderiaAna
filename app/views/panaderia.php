@@ -16,76 +16,81 @@ $productos = $controller->mostrarPanaderia();
     <title>Catálogo - Panadería ANA</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/Panaderia/publics/css/stylesPanaderia.css">
+    <link rel="stylesheet" href="../../publics/css/stylesPanaderia.css">
 </head>
 
 <body class="catalogo-body">
 
     <header class="top-menu">
-        <a href="Perfil.php">
+
+        <a href="../../index.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/perfil.png" alt="Perfil" width="80">
-                <p>Mi Perfil</p>
+                <img src="../../publics/img/logo_registro.png" alt="Perfil" width="80">
+                <p>Inicio</p>
             </div>
         </a>
+
         <div class="top-icons">
             <a href="pasteleria.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/pasteleria.png" alt="Pasteleria">
+                    <img src="../../publics/img/pasteleria.png" alt="Pasteleria">
                     <p>Pastelería</p>
                 </div>
             </a>
+
             <a href="reposteria.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/reposteria.png" alt="Repostería">
+                    <img src="../../publics/img/reposteria.png" alt="Repostería">
                     <p>Repostería</p>
                 </div>
             </a>
+
             <a href="panaderia.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/panderia.png" alt="Panadería">
+                    <img src="../../publics/img/panderia.png" alt="Panadería">
                     <p>Panadería</p>
                 </div>
             </a>
+
             <a href="promociones.php">
                 <div class="icon-item">
-                    <img src="/Panaderia/publics/img/promociones.png" alt="Promociones">
+                    <img src="../../publics/img/promociones.png" alt="Promociones">
                     <p>Promociones</p>
                 </div>
             </a>
         </div>
+
     </header>
 
     <main class="catalogo-layout">
 
         <!-- BARRA LATERAL -->
         <aside class="side-bar">
+
             <a href="recetas.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/recetasconAmor.png" alt="Recetas">
+                    <img src="../../publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
 
             <a href="sobreNosotros.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/sobreNosotros.png" alt="Sobre Nosotros">
+                    <img src="../../publics/img/sobreNosotros.png" alt="Sobre Nosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
 
             <a href="carrito.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/carrito.png" alt="Carrito">
+                    <img src="../../publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
-                    <button class="btn-agregar" data-id="<?= $p['id']; ?>"> Añadir al carrito </button>
-                <a href="carrito.php?accion=agregar&id=<?= $p['id']; ?>" class="btn-agregar"> Añadir al carrito </a>
                 </div>
             </a>
 
             <a href="express.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/express.png" alt="Express">
+                    <img src="../../publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
@@ -99,7 +104,9 @@ $productos = $controller->mostrarPanaderia();
                 <?php foreach ($productos as $p): ?>
                     <div class="fila-producto">
 
-                        <img src="<?= $p['imagen']; ?>" alt="<?= $p['nombre']; ?>" class="img-producto">
+                        <img src="../../<?= $p['imagen']; ?>" 
+                             alt="<?= $p['nombre']; ?>" 
+                             class="img-producto">
 
                         <div class="producto-card">
                             <h3><?= $p['nombre']; ?></h3>
@@ -112,16 +119,17 @@ $productos = $controller->mostrarPanaderia();
                             <div class="acciones">
 
                                 <!-- BOTÓN AÑADIR CON ID -->
-                                <button class="btn-agregar" data-id="<?= $p['id']; ?>">
-                                    Añadir al carrito
-                                </button>
+                                <a href="carrito.php?accion=agregar&id=<?= $p['id']; ?>" 
+                                   class="btn-agregar">
+                                   Añadir al carrito
+                                </a>
 
                                 <!-- INPUT DE CANTIDAD -->
                                 <div class="cantidad">
                                     <input type="number" min="1" value="1" class="cantidad-input">
                                 </div>
 
-                                <!-- EXPRESS (queda igual por ahora) -->
+                                <!-- EXPRESS -->
                                 <button class="btn-express">Envío Express</button>
 
                             </div>
@@ -129,7 +137,6 @@ $productos = $controller->mostrarPanaderia();
 
                     </div>
                 <?php endforeach; ?>
-
 
             <?php else: ?>
                 <p class="no-productos">No hay productos disponibles en esta categoría.</p>
@@ -140,10 +147,11 @@ $productos = $controller->mostrarPanaderia();
         <!-- PANEL DERECHO -->
         <aside class="right-panel">
             <div class="right-overlay">
+
                 <h2>Panadería ANA</h2>
 
-                <a href="/Panaderia/index.php">
-                    <img src="/Panaderia/publics/img/logo.png" class="logo-right" alt="Logo ANA">
+                <a href="../../index.php">
+                    <img src="../../publics/img/logo.png" class="logo-right" alt="Logo ANA">
                 </a>
 
                 <p class="texto-vertical">
@@ -151,16 +159,17 @@ $productos = $controller->mostrarPanaderia();
                 </p>
 
                 <div class="contacto">
-                    <img src="/Panaderia/publics/img/contactenos.png" alt="Contacto">
+                    <img src="../../publics/img/contactenos.png" alt="Contacto">
                     <p>Contáctenos</p>
                 </div>
+
             </div>
         </aside>
 
     </main>
 
     <!-- JS -->
-    <script src="/Panaderia/publics/js/main.js"></script>
+    <script src="../../publics/js/main.js"></script>
 
 </body>
 

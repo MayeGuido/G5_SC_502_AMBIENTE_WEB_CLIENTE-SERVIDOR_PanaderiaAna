@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff8f0;
+    color: #333;
+}
+
+.express-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ffe1b3;
+    padding: 15px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.express-header .logo {
+    width: 120px;
+}
+
+.express-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.express-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.express-form {
+    width: 60%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.express-form h2 {
+    margin-top: 20px;
+    color: #b85c38;
+}
+
+.express-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.express-form input,
+.express-form select,
+.express-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-enviar {
+    margin-top: 25px;
+    background: #e67e22;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-enviar:hover {
+    background: #cf6d1c;
+}
+
+.express-side {
+    width: 30%;
+    background: #fff3d6;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.express-side h2 {
+    color: #b85c38;
+}
+
+.side-img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.mensaje {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background: #dfffc8;
+    border: 1px solid #8ccd73;
+    border-radius: 8px;
+}

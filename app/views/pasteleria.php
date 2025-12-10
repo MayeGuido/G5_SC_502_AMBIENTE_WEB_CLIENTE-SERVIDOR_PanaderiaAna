@@ -15,81 +15,85 @@ $productos = $controller->pasteleria();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pastelería | Panadería ANA</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/Panaderia/publics/css/pasteleria.css">
+    <!-- CSS corregido -->
+    <link rel="stylesheet" href="../../publics/css/pasteleria.css">
 </head>
 
 <body>
 
     <!-- MENÚ SUPERIOR -->
     <header class="top-menu">
-        <a href="Perfil.php">
+
+        <a href="../../index.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/perfil.png" alt="Perfil" width="80">
-                <p>Mi Perfil</p>
+                <img src="../../publics/img/logo_registro.png" alt="Perfil" width="80">
+                <p>Inicio</p>
             </div>
         </a>
 
         <a href="pasteleria.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/pasteleria.png" alt="Pastelería">
+                <img src="../../publics/img/pasteleria.png" alt="Pastelería">
                 <p>Pastelería</p>
             </div>
         </a>
 
         <a href="reposteria.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/reposteria.png" alt="Repostería">
+                <img src="../../publics/img/reposteria.png" alt="Repostería">
                 <p>Repostería</p>
             </div>
         </a>
 
         <a href="panaderia.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/panderia.png" alt="Panadería">
+                <img src="../../publics/img/panderia.png" alt="Panadería">
                 <p>Panadería</p>
             </div>
         </a>
 
         <a href="promociones.php">
             <div class="icon-item">
-                <img src="/Panaderia/publics/img/promociones.png" alt="Promociones">
+                <img src="../../publics/img/promociones.png" alt="Promociones">
                 <p>Promociones</p>
             </div>
         </a>
+
     </header>
 
     <div class="catalogo-layout">
 
         <!-- BARRA LATERAL -->
         <aside class="side-bar">
+
             <a href="recetas.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/recetasconAmor.png" alt="Recetas">
+                    <img src="../../publics/img/recetasconAmor.png" alt="Recetas">
                     <p>Recetas<br>con Amor</p>
                 </div>
             </a>
 
             <a href="sobreNosotros.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/sobreNosotros.png" alt="Sobre Nosotros">
+                    <img src="../../publics/img/sobreNosotros.png" alt="Sobre Nosotros">
                     <p>Sobre Nosotros</p>
                 </div>
             </a>
 
             <a href="carrito.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/carrito.png" alt="Carrito">
+                    <img src="../../publics/img/carrito.png" alt="Carrito">
                     <p>Carrito de<br>compras</p>
                 </div>
             </a>
 
             <a href="express.php">
                 <div class="side-item">
-                    <img src="/Panaderia/publics/img/express.png" alt="Express">
+                    <img src="../../publics/img/express.png" alt="Express">
                     <p>Pedido<br>Express</p>
                 </div>
             </a>
+
         </aside>
 
         <!-- CONTENIDO PRINCIPAL -->
@@ -101,9 +105,11 @@ $productos = $controller->pasteleria();
 
                 <?php if (!empty($productos)): ?>
                     <?php foreach ($productos as $p): ?>
+
                         <div class="pastel-card">
 
-                            <img src="<?= $p['imagen']; ?>" alt="<?= $p['nombre']; ?>">
+                            <!-- Imagen desde BD -->
+                            <img src="../../<?= $p['imagen']; ?>" alt="<?= $p['nombre']; ?>">
 
                             <h3><?= $p['nombre']; ?></h3>
 
@@ -123,13 +129,14 @@ $productos = $controller->pasteleria();
                                     Personalizar
                                 </button>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
 
+                        </div>
+
+                    <?php endforeach; ?>
                 <?php else: ?>
-                    <p class="no-productos">
-                        No hay pasteles disponibles en la base de datos.
-                    </p>
+
+                    <p class="no-productos">No hay pasteles disponibles en la base de datos.</p>
+
                 <?php endif; ?>
 
             </section>
@@ -214,6 +221,7 @@ $productos = $controller->pasteleria();
                         <label for="fecha">Fecha de entrega:</label>
                         <input type="date" id="fecha" name="fecha" required>
                     </div>
+
                     <div>
                         <label for="hora">Hora de entrega:</label>
                         <input type="time" id="hora" name="hora" required>
@@ -227,24 +235,26 @@ $productos = $controller->pasteleria();
 
         <!-- PANEL DERECHO -->
         <aside class="right-panel">
+
             <h2>Pastelería ANA</h2>
 
-            <a href="/Panaderia/index.php">
-                <img src="/Panaderia/publics/img/logo.png" alt="Logo" class="logo-right">
+            <a href="../../index.php">
+                <img src="../../publics/img/logo.png" alt="Logo" class="logo-right">
             </a>
 
             <p class="texto-vertical">Cada pastel cuenta una historia</p>
 
             <div class="contacto">
-                <img src="/Panaderia/publics/img/telefono.png" alt="Teléfono">
+                <img src="../../publics/img/telefono.png" alt="Teléfono">
                 <p>Contáctenos</p>
             </div>
+
         </aside>
 
     </div>
 
     <!-- JS -->
-    <script src="/Panaderia/publics/js/main.js"></script>
+    <script src="../../publics/js/main.js"></script>
 
 </body>
 

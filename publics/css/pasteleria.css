@@ -175,7 +175,7 @@ textarea {
     right: 0;
     width: 270px;
     height: 100vh;
-    background-image: url("../../img/fondoVertical.png");
+    background-image: url("../img/fondoVertical.png");
     background-size: cover;
     background-position: center;
     display: flex;

@@ -5,16 +5,16 @@ body {
 }
 
 .hero {
-    background-image: url("../../img/fondo.png");
+    background-image: url("../img/fondo.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding: 20px;
     text-align: center;
-    color: #000;
     position: relative;
-    
+    min-height: 420px;
 }
+
 
 .menu-icon{
     width: 50px;

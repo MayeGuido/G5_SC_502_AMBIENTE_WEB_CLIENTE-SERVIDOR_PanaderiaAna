@@ -1,0 +1,136 @@
+/* ==========================================
+   CONTACTENOS — DISEÑO PREMIUM
+   ========================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #fdf7f2;
+    color: #333;
+}
+
+/* Título elegante */
+.titulo-contacto {
+    text-align: center;
+    margin-top: 130px;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #d97706; /* naranja elegante */
+    letter-spacing: 1px;
+}
+
+/* Tarjeta de Información */
+.info-contacto {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-left: 6px solid #fbbf24; /* borde amarillo */
+    animation: fadeIn 0.5s ease;
+}
+
+.info-contacto h2 {
+    text-align: center;
+    color: #b45309;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.info-contacto p {
+    font-size: 17px;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto 80px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    animation: fadeIn 0.5s ease;
+}
+
+.formulario-contacto label {
+    font-weight: 600;
+    color: #b45309;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 15px;
+}
+
+/* Inputs */
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #f3d8b6;
+    background: #fffaf3;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 8px rgba(245,158,11,0.3);
+    outline: none;
+}
+
+/* BOTÓN */
+.btn-enviar {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #f59e0b, #d97706);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(217,119,6,0.3);
+}
+
+/* MENSAJES */
+.mensaje-exito,
+.mensaje-error {
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    animation: fadeIn 0.4s ease;
+}
+
+.mensaje-exito {
+    background: #d1fae5;
+    color: #047857;
+}
+
+.mensaje-error {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
