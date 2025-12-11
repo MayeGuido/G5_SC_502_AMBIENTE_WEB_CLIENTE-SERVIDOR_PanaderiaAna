@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Contáctenos</title>
 
     <!-- Nuevo CSS Premium -->
-    <link rel="stylesheet" href="../../publics/css/contactenos.css">
+    <link rel="stylesheet" href="/G5_SC_502_AMBIENTE_WEB_CLIENTE-SERVIDOR_PanaderiaAna/publics/css/contactenos.css">
     <!-- Fuente Poppins (opcional para mejor estilo) -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>

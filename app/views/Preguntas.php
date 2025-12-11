@@ -15,10 +15,10 @@ $faq = $controller->listarFAQ();
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Preguntas y Consultas</title>
+    <title>Preguntas Frecuentes</title>
 
-  <link rel="stylesheet" href="/publics/css/preguntas.css">
-
+  <link rel="stylesheet" href="/G5_SC_502_AMBIENTE_WEB_CLIENTE-SERVIDOR_PanaderiaAna/publics/css/preguntas.css">
+  
 </head>
 
 <body>
