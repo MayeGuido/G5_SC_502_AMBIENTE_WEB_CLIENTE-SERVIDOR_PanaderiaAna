@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Inventario | Panadería ANA</title>
@@ -34,17 +33,10 @@
             <?php foreach ($productos as $p): ?>
                 <tr>
                     <td><?= $p['id'] ?></td>
-
-                    <td>
-                        <img src="<?= $p['imagen'] ?>" alt="<?= $p['nombre'] ?>">
-                    </td>
-
+                    <td><img src="<?= $p['imagen'] ?>" alt="<?= $p['nombre'] ?>"></td>
                     <td><?= $p['nombre'] ?></td>
-
                     <td><?= $p['categoria'] ?></td>
-
                     <td>₡<?= number_format($p['precio'], 2) ?></td>
-
                     <td><?= $p['existencia'] ?></td>
                 </tr>
             <?php endforeach; ?>
