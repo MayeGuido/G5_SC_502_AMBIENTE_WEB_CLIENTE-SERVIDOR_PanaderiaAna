@@ -1,14 +1,14 @@
 <?php
 session_start();
 
-require_once _DIR_ . '/../controllers/CarritoController.php';
-require_once _DIR_ . '/../controllers/PedidosController.php';
+require_once __DIR__ . '/../controllers/CarritoController.php';
+require_once __DIR__ . '/../controllers/PedidosController.php';
 
 $carritoController = new CarritoController();
 $pedidosController = new PedidosController();
 
-$accion      = $_GET['accion'] ?? ($_POST['accion'] ?? null);
-$idProducto  = $_GET['id'] ?? ($_POST['id'] ?? null);
+$accion       = $_GET['accion'] ?? ($_POST['accion'] ?? null);
+$idProducto   = $_GET['id'] ?? ($_POST['id'] ?? null);
 $mensajeExito = '';
 $mensajeError = '';
 
@@ -51,7 +51,7 @@ try {
                 'direccion'      => $_POST['direccion'] ?? ''
             ];
 
-            $usuarioId = isset($_SESSION['usuario_id']) ? $_SESSION['usuario_id'] : null;
+            $usuarioId = $_SESSION['usuario_id'] ?? null;
 
             $pedidoId = $pedidosController->guardarPedido($datosCliente, $itemsCarrito, $usuarioId);
             $carritoController->vaciar();
@@ -66,119 +66,118 @@ try {
 $items = $carritoController->obtenerCarrito();
 $total = $carritoController->calcularTotal();
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Carrito de compras - Panadería ANA</title>
-
     <link rel="stylesheet" href="../../publics/css/styles.css">
 </head>
 
 <body>
 
-    <header class="hero">
-        <a href="../../index.php" class="no-link">
-            <img src="../../publics/img/logo.png" alt="Logo" class="logo" />
-        </a>
-        <h1 style="color:white;">Carrito de compras</h1>
-    </header>
+<header class="hero">
+    <a href="../../index.php" class="no-link">
+        <img src="../../publics/img/logo.png" alt="Logo" class="logo" />
+    </a>
+    <h1 style="color:white;">Carrito de compras</h1>
+</header>
 
-    <main class="contenedor" style="max-width: 900px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 15px;">
-        
-        <?php if ($mensajeExito): ?>
-            <p style="color: green; font-weight:bold;"><?= htmlspecialchars($mensajeExito) ?></p>
-        <?php endif; ?>
+<main class="contenedor" style="max-width: 900px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 15px;">
 
-        <?php if ($mensajeError): ?>
-            <p style="color: red; font-weight:bold;"><?= htmlspecialchars($mensajeError) ?></p>
-        <?php endif; ?>
+<?php if ($mensajeExito): ?>
+    <p style="color: green; font-weight:bold;"><?= htmlspecialchars($mensajeExito) ?></p>
+<?php endif; ?>
 
-        <?php if (empty($items)): ?>
-            <p>El carrito está vacío.</p>
-            <p><a href="panaderia.php">Volver al catálogo de Panadería</a></p>
+<?php if ($mensajeError): ?>
+    <p style="color: red; font-weight:bold;"><?= htmlspecialchars($mensajeError) ?></p>
+<?php endif; ?>
 
-        <?php else: ?>
+<?php if (empty($items)): ?>
+    <p>El carrito está vacío.</p>
+    <p><a href="panaderia.php">Volver al catálogo de Panadería</a></p>
 
-            <form action="carrito.php" method="post">
-                <input type="hidden" name="accion" value="actualizar">
+<?php else: ?>
 
-                <table border="0" width="100%" cellpadding="8" cellspacing="0">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio (₡)</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal (₡)</th>
-                            <th>Quitar</th>
-                        </tr>
-                    </thead>
+<form action="carrito.php" method="post">
+    <input type="hidden" name="accion" value="actualizar">
 
-                    <tbody>
-                        <?php foreach ($items as $item): ?>
-                            <tr>
-                                <td>
-                                    <img src="../../<?= htmlspecialchars($item['imagen']) ?>" alt="" style="width:60px; vertical-align:middle;">
-                                    <?= htmlspecialchars($item['nombre']) ?>
-                                </td>
+    <table border="0" width="100%" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio (₡)</th>
+                <th>Cantidad</th>
+                <th>Subtotal (₡)</th>
+                <th>Quitar</th>
+            </tr>
+        </thead>
 
-                                <td><?= number_format($item['precio'], 2) ?></td>
+        <tbody>
+            <?php foreach ($items as $item): ?>
+            <tr>
+                <td>
+                    <img src="../../<?= htmlspecialchars($item['imagen']) ?>" alt="" style="width:60px; vertical-align:middle;">
+                    <?= htmlspecialchars($item['nombre']) ?>
+                </td>
 
-                                <td>
-                                    <input type="number"
-                                           name="cantidades[<?= (int)$item['id'] ?>]"
-                                           value="<?= (int)$item['cantidad'] ?>"
-                                           min="1"
-                                           style="width:60px;">
-                                </td>
+                <td><?= number_format($item['precio'], 2) ?></td>
 
-                                <td><?= number_format($item['precio'] * $item['cantidad'], 2) ?></td>
+                <td>
+                    <input type="number"
+                        name="cantidades[<?= (int)$item['id'] ?>]"
+                        value="<?= (int)$item['cantidad'] ?>"
+                        min="1"
+                        style="width:60px;">
+                </td>
 
-                                <td>
-                                    <a href="carrito.php?accion=eliminar&id=<?= (int)$item['id'] ?>">Eliminar</a>
-                                </td>
-                            </tr>
-                        <?php endforeach; ?>
-                    </tbody>
-                </table>
+                <td><?= number_format($item['precio'] * $item['cantidad'], 2) ?></td>
 
-                <p style="text-align:right; font-size:18px; margin-top:10px;">
-                    <strong>Total: ₡<?= number_format($total, 2) ?></strong>
-                </p>
+                <td>
+                    <a href="carrito.php?accion=eliminar&id=<?= (int)$item['id'] ?>">Eliminar</a>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 
-                <div style="display:flex; justify-content:space-between; margin-top:15px;">
-                    <button type="submit">Actualizar cantidades</button>
-                    <a href="carrito.php?accion=vaciar" style="color:red;">Vaciar carrito</a>
-                </div>
+    <p style="text-align:right; font-size:18px; margin-top:10px;">
+        <strong>Total: ₡<?= number_format($total, 2) ?></strong>
+    </p>
 
-            </form>
+    <div style="display:flex; justify-content:space-between; margin-top:15px;">
+        <button type="submit">Actualizar cantidades</button>
+        <a href="carrito.php?accion=vaciar" style="color:red;">Vaciar carrito</a>
+    </div>
+</form>
 
-            <hr style="margin:25px 0;">
+<hr style="margin:25px 0;">
 
-            <h2>Datos para el pedido</h2>
+<h2>Datos para el pedido</h2>
 
-            <form action="carrito.php" method="post">
-                <input type="hidden" name="accion" value="crear_pedido">
+<form action="carrito.php" method="post">
+    <input type="hidden" name="accion" value="crear_pedido">
 
-                <label>Nombre completo</label><br>
-                <input type="text" name="nombre_cliente" required style="width:100%; margin-bottom:10px;"><br>
+    <label>Nombre completo</label><br>
+    <input type="text" name="nombre_cliente" required style="width:100%; margin-bottom:10px;"><br>
 
-                <label>Teléfono</label><br>
-                <input type="text" name="telefono" required style="width:100%; margin-bottom:10px;"><br>
+    <label>Teléfono</label><br>
+    <input type="text" name="telefono" required style="width:100%; margin-bottom:10px;"><br>
 
-                <label>Dirección de entrega</label><br>
-                <textarea name="direccion" rows="3" required style="width:100%;"></textarea><br><br>
+    <label>Dirección de entrega</label><br>
+    <textarea name="direccion" rows="3" required style="width:100%;"></textarea><br><br>
 
-                <button type="submit">Confirmar pedido</button>
-            </form>
+    <button type="submit">Confirmar pedido</button>
+</form>
 
-        <?php endif; ?>
+<?php endif; ?>
 
-    </main>
+</main>
 
-    <footer class="footer">
-        <p>Panadería y Repostería ANA &copy; <?= date('Y') ?></p>
-    </footer>
+<footer class="footer">
+    <p>Panadería y Repostería ANA &copy; <?= date('Y') ?></p>
+</footer>
 
 </body>
 </html>
