@@ -17,8 +17,8 @@ $faq = $controller->listarFAQ();
     <meta charset="UTF-8">
     <title>Preguntas y Consultas</title>
 
-    <!-- CSS correcto -->
-    <link rel="stylesheet" href="../../publics/css/preguntas.css">
+  <link rel="stylesheet" href="/publics/css/preguntas.css">
+
 </head>
 
 <body>
